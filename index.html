@@ -80,6 +80,651 @@ td, th { padding: 12px; }
     This table lists demo tracks. Each row provides a title, a global style prompt, optional expandable lyrics, and five audio renderings produced by different models for quick A/B listening.
   </div>
 </div>
+
+<!-- === DEMO TABLE === -->
+<div class="container my-4">
+
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h4 class="m-0">Random picked demo tracks</h4>
+    <div>
+      <button id="expandAll" class="btn btn-sm btn-outline-primary mr-2"><i class="bi bi-arrows-expand"></i> Expand all lyrics</button>
+      <button id="collapseAll" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrows-collapse"></i> Collapse all lyrics</button>
+    </div>
+  </div>
+
+  <div class="alert alert-light border small">
+    <strong>How to use:</strong> Click “Show lyrics” in a row to expand/collapse the full lyrics. Each row shows the global style prompt and 5 generated versions (one per model). You can scroll horizontally if needed.
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-sm table-bordered align-middle" aria-describedby="table-explainer">
+      <caption class="text-left">Side-by-side comparison of five music generation models per prompt and lyrics.</caption>
+      <thead class="thead-light">
+        <tr>
+          <th class="sticky-col-1" style="min-width:60px;">#</th>
+          <th class="sticky-col-2 prompt-col">Global Style Prompt</th>
+          <th class="lyrics-col">Lyrics</th>
+          <th class="model-col">ComposerFlow</th>
+          <th class="model-col">Acestep</th>
+          <th class="model-col">DiffRhythm</th>
+          <th class="model-col">Levo</th>
+          <th class="model-col">Suno</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <!-- === ROW 1 === -->
+        <tr>
+          <td>1</td>
+          
+          <td class="prompt-col">
+            <div class="small text-muted">An emotional indie rock track with echoing guitars, steady drums. The mood is reflective and guiding, like the beacon of a lighthouse during a night voyage.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-1" aria-expanded="false" aria-controls="lyric-1">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-1" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                黑夜裡只有浪潮低語
+                hēi yè lǐ zhǐ yǒu làng cháo dī yǔ
+                遠方微光閃爍在心底
+                yuǎn fāng wēi guāng shǎn shuò zài xīn dǐ
+                船身隨夢想搖晃前行
+                chuán shēn suí mèng xiǎng yáo huàng qián xíng
+                星辰引領未知的路徑
+                xīng chén yǐn lǐng wèi zhī de lù jìng
+                微光指引堅定的方向
+                wēi guāng zhǐ yǐn jiān dìng de fāng xiàng
+                心靈不再迷失無助
+                xīn líng bù zài mí shī wú zhù
+
+                [Chorus]
+                夜航燈塔照亮旅程
+                yè háng dēng tǎ zhào liàng lǚ chéng
+                黑暗中不再孤單
+                hēi àn zhōng bù zài gū dān
+                希望在波濤中閃耀
+                xī wàng zài bō tāo zhōng shǎn yào
+                勇氣陪我直到天明
+                yǒng qì péi wǒ zhí dào tiān míng
+
+                [Outro]
+                燈光依舊守護夜色
+                dēng guāng yī jiù shǒu hù yè sè
+                心靈找到歸屬的岸
+                xīn líng zhǎo dào guī shǔ de àn
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_25.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/25.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/25_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/25.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/25.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+        <!-- === ROW 2 === -->
+        <tr>
+          <td>2</td>
+          
+          <td class="prompt-col">
+            <div class="small text-muted">A trip-hop inspired track with moody beats, dark synths. The atmosphere is mysterious and hypnotic, like time slipping away like sand.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-26" aria-expanded="false" aria-controls="lyric-26">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-26" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                時間在掌心緩緩流動
+                shí jiān zài zhǎng xīn huǎn huǎn liú dòng
+                沙粒劃過無聲的夢境
+                shā lì huà guò wú shēng de mèng jìng
+                黑夜中隱藏不安心跳
+                hēi yè zhōng yǐn cáng bù ān xīn tiào
+                記憶碎片如影追隨
+                jì yì suì piàn rú yǐng zhuī suí
+                無法阻止流沙的墜落
+                wú fǎ zǔ zhǐ liú shā de zhuì luò
+                靈魂在夜色中漂泊
+                líng hún zài yè sè zhōng piāo bó
+
+                [Chorus]
+                流沙時刻悄然滑落
+                liú shā shí kè qiāo rán huá luò
+                夢境崩塌無法捕捉
+                mèng jìng bēng tā wú fǎ bǔ zhuō
+                心靈迷失在黑暗之中
+                xīn líng mí shī zài hēi àn zhī zhōng
+                時間無聲將我吞沒
+                shí jiān wú shēng jiāng wǒ tūn mò
+
+                [Outro]
+                流沙低語仍在回蕩
+                liú shā dī yǔ réng zài huí dàng
+                夜色掩埋未盡的夢
+                yè sè yǎn mái wèi jìn de mèng
+
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_26.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/26.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/26_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/26.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/26.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+        <!-- === ROW 3 === -->
+        <tr>
+          <td>3</td>
+          
+          <td class="prompt-col">     
+            <div class="small text-muted">A meditative ambient piece with temple bells, wooden percussion, low drones. The sound is spiritual and calming, like a ritual at dawn in an ancient temple.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-29" aria-expanded="false" aria-controls="lyric-29">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-29" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                暮鼓聲聲震動山谷
+                mù gǔ shēng shēng zhèn dòng shān gǔ
+                晨鐘悠悠喚醒大地
+                chén zhōng yōu yōu huàn xǐng dà dì
+                心念隨聲逐漸安定
+                xīn niàn suí shēng zhú jiàn ān dìng
+                靈魂浸入無邊靜謐
+                líng hún jìn rù wú biān jìng mì
+                木魚聲響伴隨微風
+                mù yú shēng xiǎng bàn suí wēi fēng
+                回音延展穿越古今
+                huí yīn yán zhǎn chuān yuè gǔ jīn
+
+                [Chorus]
+                暮鼓晨鐘迴盪心房
+                mù gǔ chén zhōng huí dàng xīn fáng
+                時光停駐無聲流淌
+                shí guāng tíng zhù wú shēng liú tǎng
+                靜思深處燃起光芒
+                jìng sī shēn chù rán qǐ guāng máng
+                信念永遠不會消亡
+                xìn niàn yǒng yuǎn bú huì xiāo wáng
+
+                [Outro]
+                鐘聲漸遠仍在心中
+                zhōng shēng jiàn yuǎn réng zài xīn zhōng
+                靜謐回響永恆守候
+                jìng mì huí xiǎng yǒng héng shǒu hòu
+
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_29.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/29.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/29_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/29.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/29.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+        <!-- === ROW 4 === -->
+        <tr>
+          <td>4</td>
+          
+          <td class="prompt-col">
+
+            
+            <div class="small text-muted">A slow Chinese folk-inspired ballad with guqin, erhu. The mood is nostalgic and poetic, like watching a lone boat disappear on a river.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-31" aria-expanded="false" aria-controls="lyric-31">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-31" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                江水悠悠托起孤舟
+                jiāng shuǐ yōu yōu tuō qǐ gū zhōu
+                白霧籠罩故鄉的岸
+                bái wù lóng zhào gù xiāng de àn
+                遠山輪廓映照殘陽
+                yuǎn shān lún kuò yìng zhào cán yáng
+                離歌迴盪隨風遠揚
+                lí gē huí dàng suí fēng yuǎn yáng
+                一聲輕嘆落入江心
+                yì shēng qīng tàn luò rù jiāng xīn
+                留下思念無人能懂
+                liú xià sī niàn wú rén néng dǒng
+
+                [Chorus]
+                孤舟遠影消失天際
+                gū zhōu yuǎn yǐng xiāo shī tiān jì
+                夢回依舊在心底
+                mèng huí yī jiù zài xīn dǐ
+                歲月沉默不語無聲
+                suì yuè chén mò bù yǔ wú shēng
+                思念化作河流長行
+                sī niàn huà zuò hé liú cháng xíng
+
+                [Outro]
+                江面留下ㄧ抹殘影
+                jiāng miàn liú xià yì mǒ cán yǐng
+                心事隨波永遠漂流
+                xīn shì suí bō yǒng yuǎn piāo liú
+
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_31.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/31.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/31_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/31.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/31.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+        <!-- === ROW 5 === -->
+        <tr>
+          <td>5</td>
+          
+          <td class="prompt-col">
+
+            
+            <div class="small text-muted">A synthwave track with retro analog synths, electronic drums. The sound is nostalgic and mysterious, like getting lost in neon-lit streets at night.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-36" aria-expanded="false" aria-controls="lyric-36">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-36" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                夜色映照無盡的街
+                yè sè yìng zhào wú jìn de jiē
+                霓虹閃爍掩蓋心事
+                ní hóng shǎn shuò yǎn gài xīn shì
+                腳步迷失在夢的邊界
+                jiǎo bù mí shī zài mèng de biān jiè
+                風聲低語引領前行
+                fēng shēng dī yǔ yǐn lǐng qián xíng
+                孤單隱沒在閃光深處
+                gū dān yǐn mò zài shǎn guāng shēn chù
+                靈魂尋找出口的燈火
+                líng hún xún zhǎo chū kǒu de dēng huǒ
+
+                [Chorus]
+                夜色迷途無盡延續
+                yè sè mí tú wú jìn yán xù
+                心跳隨節奏不停追尋
+                xīn tiào suí jié zòu bù tíng zhuī xún
+                夢境帶我穿越黑暗
+                mèng jìng dài wǒ chuān yuè hēi àn
+                希望在遠方閃閃發亮
+                xī wàng zài yuǎn fāng shǎn shǎn fā liàng
+
+                [Outro]
+                霓虹逐漸沉入寂靜
+                ní hóng zhú jiàn chén rù jì jìng
+                心靈找到歸屬方向
+                xīn líng zhǎo dào guī shǔ fāng xiàng
+
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_36.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/36.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/36_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/36.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/36.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+        <!-- === ROW 6 === -->
+        <tr>
+          <td>6</td>
+          
+          <td class="prompt-col">
+
+            
+            <div class="small text-muted">An uplifting pop ballad with piano, strings. The mood is hopeful and inspiring, like walking down a sunlit road at dawn.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-45" aria-expanded="false" aria-controls="lyric-45">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-45" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                晨曦灑落喚醒的時光
+                chén xī sǎ luò huàn xǐng de shí guāng
+                腳步輕快迎向未來
+                jiǎo bù qīng kuài yíng xiàng wèi lái
+                心靈閃耀不滅的希望
+                xīn líng shǎn yào bù miè de xī wàng
+                每一瞬間都充滿力量
+                měi yí shùn jiān dōu chōng mǎn lì liàng
+                微風低語陪伴著夢想
+                wēi fēng dī yǔ péi bàn zhe mèng xiǎng
+                勇氣綻放在光芒之中
+                yǒng qì zhàn fàng zài guāng máng zhī zhōng
+
+                [Chorus]
+                晨曦之路引領方向
+                chén xī zhī lù yǐn lǐng fāng xiàng
+                心靈飛翔不再迷惘
+                xīn líng fēi xiáng bù zài mí wǎng
+                愛的歌聲迴盪天際
+                ài de gē shēng huí dàng tiān jì
+                未來就在光芒前方
+                wèi lái jiù zài guāng máng qián fāng
+
+                [Outro]
+                晨曦依舊照耀旅程
+                chén xī yī jiù zhào yào lǚ chéng
+                心靈堅定走向遠方
+                xīn líng jiān dìng zǒu xiàng yuǎn fāng
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_45.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/45.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/45_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/45.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/45.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+        <!-- === ROW 7 === -->
+        <tr>
+          <td>7</td>
+          
+          <td class="prompt-col">
+
+            
+            <div class="small text-muted">A dramatic ballad with piano, cello. The mood is sorrowful and reflective, like a nocturne echoing in an empty city.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-78" aria-expanded="false" aria-controls="lyric-78">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-78" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                孤城靜夜無聲的呼吸
+                gū chéng jìng yè wú shēng de hū xī
+                燈火映照破碎的夢
+                dēng huǒ yìng zhào pò suì de mèng
+                心靈低吟歲月滄桑
+                xīn líng dī yín suì yuè cāng sāng
+                腳步停留在舊時街
+                jiǎo bù tíng liú zài jiù shí jiē
+                夜色承載無盡思念
+                yè sè chéng zǎi wú jìn sī niàn
+                愛意悄然融入寂寞
+                ài yì qiāo rán róng rù jì mò
+
+                [Chorus]
+                孤城夜曲回響心底
+                gū chéng yè qǔ huí xiǎng xīn dǐ
+                夢想消散無人知曉
+                mèng xiǎng xiāo sàn wú rén zhī xiǎo
+                愛的旋律依舊悠揚
+                ài de xuán lǜ yī jiù yōu yáng
+                希望隱藏夜色深處
+                xī wàng yǐn cáng yè sè shēn chù
+
+                [Outro]
+                夜曲依舊低聲吟唱
+                yè qǔ yī jiù dī shēng yín chàng
+                孤城安眠在回聲裡
+                gū chéng ān mián zài huí shēng lǐ
+
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_78.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/78.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/78_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/78.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/78.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+        <!-- === ROW 8 === -->
+        <tr>
+          <td>8</td>
+          
+          <td class="prompt-col">
+
+            
+            <div class="small text-muted">A breezy pop song with electric guitar, synths. The mood is light and adventurous, like sailing away on a summer day.</div>
+          </td>
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-124" aria-expanded="false" aria-controls="lyric-124">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="lyric-124" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+                [Verse]
+                夏日微風吹散雲彩
+                xià rì wēi fēng chuī sàn yún cǎi
+                海浪拍擊湧起節奏
+                hǎi làng pāi jī yǒng qǐ jié zòu
+                船帆張開奔向遠方
+                chuán fān zhāng kāi bēn xiàng yuǎn fāng
+                夢想揚起閃亮微笑
+                mèng xiǎng yáng qǐ shǎn liàng wēi xiào
+                愛意在陽光下綻放
+                ài yì zài yáng guāng xià zhàn fàng
+                希望在浪潮中飛翔
+                xī wàng zài làng cháo zhōng fēi xiáng
+
+                [Chorus]
+                夏日遠航無盡方向
+                xià rì yuǎn háng wú jìn fāng xiàng
+                夢想高歌隨風飄蕩
+                mèng xiǎng gāo gē suí fēng piāo dàng
+                愛的旋律自由閃亮
+                ài de xuán lǜ zì yóu shǎn liàng
+                未來等待新的航程
+                wèi lái děng dài xīn de háng chéng
+
+                [Outro]
+                遠航依舊映照海洋
+                yuǎn háng yī jiù yìng zhào hǎi yáng
+                光影延續無限希望
+                guāng yǐng yán xù wú xiàn xī wàng
+              </div>
+            </div>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="ComposerFlow_samples/mixed_124.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="acestep/124.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="diffrhythm/124_output.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="levo/124.wav" type="audio/wav">
+            </audio>
+          </td>
+          <td>
+            <audio controls preload="metadata" style="width:300px;">
+              <source src="suno/124.wav" type="audio/wav">
+            </audio>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+<template id="disabled-hero">
 <!-- === CHORD PROGRESSION DEMO SECTION === -->
 <div class="container my-5">
   <div class="d-flex justify-content-between align-items-center mb-3">
@@ -1234,7 +1879,7 @@ td, th { padding: 12px; }
                       </button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_1/mixed_0.wav" type="audio/wav">
+                      <source src="chord_1/mixed_0 (1).wav" type="audio/wav">
                     </audio>
 
                     <!-- Row 1 chord progression (shared; toggled from any cell in this row) -->
@@ -1419,7 +2064,7 @@ td, th { padding: 12px; }
                       </button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_1/mixed_1.wav" type="audio/wav">
+                      <source src="chord_1/mixed_1 (1).wav" type="audio/wav">
                     </audio>
                   </td>
 
@@ -1431,7 +2076,7 @@ td, th { padding: 12px; }
                       </button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_1/mixed_2.wav" type="audio/wav">
+                      <source src="chord_1/mixed_2 (1).wav" type="audio/wav">
                     </audio>
                   </td>
                 </tr>
@@ -1446,7 +2091,7 @@ td, th { padding: 12px; }
                       </button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_2/mixed_0.wav" type="audio/wav">
+                      <source src="chord_2/mixed_0 (1).wav" type="audio/wav">
                     </audio>
                     <div id="prog-row-2" class="collapse mt-2 text-left">
                       <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
@@ -1624,7 +2269,7 @@ td, th { padding: 12px; }
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-2">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_2/mixed_1.wav" type="audio/wav">
+                      <source src="chord_2/mixed_1 (1).wav" type="audio/wav">
                     </audio>
                   </td>
                   <td class="text-center align-top">
@@ -1633,7 +2278,7 @@ td, th { padding: 12px; }
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-2">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_2/mixed_2.wav" type="audio/wav">
+                      <source src="chord_2/mixed_2 (1).wav" type="audio/wav">
                     </audio>
                   </td>
                 </tr>
@@ -1648,7 +2293,7 @@ td, th { padding: 12px; }
                       </button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_3/mixed_0.wav" type="audio/wav">
+                      <source src="chord_3/mixed_0 (1).wav" type="audio/wav">
                     </audio>
                     <div id="prog-row-3" class="collapse mt-2 text-left">
                       <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
@@ -1665,7 +2310,7 @@ td, th { padding: 12px; }
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-3">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_3/mixed_1.wav" type="audio/wav">
+                      <source src="chord_3/mixed_1 (1).wav" type="audio/wav">
                     </audio>
                   </td>
                   <td class="text-center align-top">
@@ -1674,7 +2319,7 @@ td, th { padding: 12px; }
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-3">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
-                      <source src="chord_3/mixed_2.wav" type="audio/wav">
+                      <source src="chord_3/mixed_2 (1).wav" type="audio/wav">
                     </audio>
                   </td>
                 </tr>
@@ -1732,650 +2377,6 @@ td, th { padding: 12px; }
           </div>
         </div>
 
-<!-- === DEMO TABLE === -->
-<div class="container my-4">
-
-  <div class="d-flex justify-content-between align-items-center mb-2">
-    <h4 class="m-0">Random picked demo tracks</h4>
-    <div>
-      <button id="expandAll" class="btn btn-sm btn-outline-primary mr-2"><i class="bi bi-arrows-expand"></i> Expand all lyrics</button>
-      <button id="collapseAll" class="btn btn-sm btn-outline-secondary"><i class="bi bi-arrows-collapse"></i> Collapse all lyrics</button>
-    </div>
-  </div>
-
-  <div class="alert alert-light border small">
-    <strong>How to use:</strong> Click “Show lyrics” in a row to expand/collapse the full lyrics. Each row shows the global style prompt and 5 generated versions (one per model). You can scroll horizontally if needed.
-  </div>
-
-  <div class="table-responsive">
-    <table class="table table-sm table-bordered align-middle" aria-describedby="table-explainer">
-      <caption class="text-left">Side-by-side comparison of five music generation models per prompt and lyrics.</caption>
-      <thead class="thead-light">
-        <tr>
-          <th class="sticky-col-1" style="min-width:60px;">#</th>
-          <th class="sticky-col-2 prompt-col">Global Style Prompt</th>
-          <th class="lyrics-col">Lyrics</th>
-          <th class="model-col">ComposerFlow</th>
-          <th class="model-col">Acestep</th>
-          <th class="model-col">DiffRhythm</th>
-          <th class="model-col">Levo</th>
-          <th class="model-col">Suno</th>
-        </tr>
-      </thead>
-      <tbody>
-
-        <!-- === ROW 1 === -->
-        <tr>
-          <td>1</td>
-          
-          <td class="prompt-col">
-            <div class="small text-muted">An emotional indie rock track with echoing guitars, steady drums. The mood is reflective and guiding, like the beacon of a lighthouse during a night voyage.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-1" aria-expanded="false" aria-controls="lyric-1">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-1" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                黑夜裡只有浪潮低語
-                hēi yè lǐ zhǐ yǒu làng cháo dī yǔ
-                遠方微光閃爍在心底
-                yuǎn fāng wēi guāng shǎn shuò zài xīn dǐ
-                船身隨夢想搖晃前行
-                chuán shēn suí mèng xiǎng yáo huàng qián xíng
-                星辰引領未知的路徑
-                xīng chén yǐn lǐng wèi zhī de lù jìng
-                微光指引堅定的方向
-                wēi guāng zhǐ yǐn jiān dìng de fāng xiàng
-                心靈不再迷失無助
-                xīn líng bù zài mí shī wú zhù
-
-                [Chorus]
-                夜航燈塔照亮旅程
-                yè háng dēng tǎ zhào liàng lǚ chéng
-                黑暗中不再孤單
-                hēi àn zhōng bù zài gū dān
-                希望在波濤中閃耀
-                xī wàng zài bō tāo zhōng shǎn yào
-                勇氣陪我直到天明
-                yǒng qì péi wǒ zhí dào tiān míng
-
-                [Outro]
-                燈光依舊守護夜色
-                dēng guāng yī jiù shǒu hù yè sè
-                心靈找到歸屬的岸
-                xīn líng zhǎo dào guī shǔ de àn
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_25.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/25.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/25_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/25.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/25.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-        <!-- === ROW 2 === -->
-        <tr>
-          <td>2</td>
-          
-          <td class="prompt-col">
-            <div class="small text-muted">A trip-hop inspired track with moody beats, dark synths. The atmosphere is mysterious and hypnotic, like time slipping away like sand.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-26" aria-expanded="false" aria-controls="lyric-26">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-26" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                時間在掌心緩緩流動
-                shí jiān zài zhǎng xīn huǎn huǎn liú dòng
-                沙粒劃過無聲的夢境
-                shā lì huà guò wú shēng de mèng jìng
-                黑夜中隱藏不安心跳
-                hēi yè zhōng yǐn cáng bù ān xīn tiào
-                記憶碎片如影追隨
-                jì yì suì piàn rú yǐng zhuī suí
-                無法阻止流沙的墜落
-                wú fǎ zǔ zhǐ liú shā de zhuì luò
-                靈魂在夜色中漂泊
-                líng hún zài yè sè zhōng piāo bó
-
-                [Chorus]
-                流沙時刻悄然滑落
-                liú shā shí kè qiāo rán huá luò
-                夢境崩塌無法捕捉
-                mèng jìng bēng tā wú fǎ bǔ zhuō
-                心靈迷失在黑暗之中
-                xīn líng mí shī zài hēi àn zhī zhōng
-                時間無聲將我吞沒
-                shí jiān wú shēng jiāng wǒ tūn mò
-
-                [Outro]
-                流沙低語仍在回蕩
-                liú shā dī yǔ réng zài huí dàng
-                夜色掩埋未盡的夢
-                yè sè yǎn mái wèi jìn de mèng
-
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_26.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/26.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/26_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/26.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/26.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-        <!-- === ROW 3 === -->
-        <tr>
-          <td>3</td>
-          
-          <td class="prompt-col">     
-            <div class="small text-muted">A meditative ambient piece with temple bells, wooden percussion, low drones. The sound is spiritual and calming, like a ritual at dawn in an ancient temple.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-29" aria-expanded="false" aria-controls="lyric-29">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-29" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                暮鼓聲聲震動山谷
-                mù gǔ shēng shēng zhèn dòng shān gǔ
-                晨鐘悠悠喚醒大地
-                chén zhōng yōu yōu huàn xǐng dà dì
-                心念隨聲逐漸安定
-                xīn niàn suí shēng zhú jiàn ān dìng
-                靈魂浸入無邊靜謐
-                líng hún jìn rù wú biān jìng mì
-                木魚聲響伴隨微風
-                mù yú shēng xiǎng bàn suí wēi fēng
-                回音延展穿越古今
-                huí yīn yán zhǎn chuān yuè gǔ jīn
-
-                [Chorus]
-                暮鼓晨鐘迴盪心房
-                mù gǔ chén zhōng huí dàng xīn fáng
-                時光停駐無聲流淌
-                shí guāng tíng zhù wú shēng liú tǎng
-                靜思深處燃起光芒
-                jìng sī shēn chù rán qǐ guāng máng
-                信念永遠不會消亡
-                xìn niàn yǒng yuǎn bú huì xiāo wáng
-
-                [Outro]
-                鐘聲漸遠仍在心中
-                zhōng shēng jiàn yuǎn réng zài xīn zhōng
-                靜謐回響永恆守候
-                jìng mì huí xiǎng yǒng héng shǒu hòu
-
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_29.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/29.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/29_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/29.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/29.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-        <!-- === ROW 4 === -->
-        <tr>
-          <td>4</td>
-          
-          <td class="prompt-col">
-
-            
-            <div class="small text-muted">A slow Chinese folk-inspired ballad with guqin, erhu. The mood is nostalgic and poetic, like watching a lone boat disappear on a river.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-31" aria-expanded="false" aria-controls="lyric-31">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-31" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                江水悠悠托起孤舟
-                jiāng shuǐ yōu yōu tuō qǐ gū zhōu
-                白霧籠罩故鄉的岸
-                bái wù lóng zhào gù xiāng de àn
-                遠山輪廓映照殘陽
-                yuǎn shān lún kuò yìng zhào cán yáng
-                離歌迴盪隨風遠揚
-                lí gē huí dàng suí fēng yuǎn yáng
-                一聲輕嘆落入江心
-                yì shēng qīng tàn luò rù jiāng xīn
-                留下思念無人能懂
-                liú xià sī niàn wú rén néng dǒng
-
-                [Chorus]
-                孤舟遠影消失天際
-                gū zhōu yuǎn yǐng xiāo shī tiān jì
-                夢回依舊在心底
-                mèng huí yī jiù zài xīn dǐ
-                歲月沉默不語無聲
-                suì yuè chén mò bù yǔ wú shēng
-                思念化作河流長行
-                sī niàn huà zuò hé liú cháng xíng
-
-                [Outro]
-                江面留下ㄧ抹殘影
-                jiāng miàn liú xià yì mǒ cán yǐng
-                心事隨波永遠漂流
-                xīn shì suí bō yǒng yuǎn piāo liú
-
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_31.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/31.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/31_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/31.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/31.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-        <!-- === ROW 5 === -->
-        <tr>
-          <td>5</td>
-          
-          <td class="prompt-col">
-
-            
-            <div class="small text-muted">A synthwave track with retro analog synths, electronic drums. The sound is nostalgic and mysterious, like getting lost in neon-lit streets at night.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-36" aria-expanded="false" aria-controls="lyric-36">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-36" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                夜色映照無盡的街
-                yè sè yìng zhào wú jìn de jiē
-                霓虹閃爍掩蓋心事
-                ní hóng shǎn shuò yǎn gài xīn shì
-                腳步迷失在夢的邊界
-                jiǎo bù mí shī zài mèng de biān jiè
-                風聲低語引領前行
-                fēng shēng dī yǔ yǐn lǐng qián xíng
-                孤單隱沒在閃光深處
-                gū dān yǐn mò zài shǎn guāng shēn chù
-                靈魂尋找出口的燈火
-                líng hún xún zhǎo chū kǒu de dēng huǒ
-
-                [Chorus]
-                夜色迷途無盡延續
-                yè sè mí tú wú jìn yán xù
-                心跳隨節奏不停追尋
-                xīn tiào suí jié zòu bù tíng zhuī xún
-                夢境帶我穿越黑暗
-                mèng jìng dài wǒ chuān yuè hēi àn
-                希望在遠方閃閃發亮
-                xī wàng zài yuǎn fāng shǎn shǎn fā liàng
-
-                [Outro]
-                霓虹逐漸沉入寂靜
-                ní hóng zhú jiàn chén rù jì jìng
-                心靈找到歸屬方向
-                xīn líng zhǎo dào guī shǔ fāng xiàng
-
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_36.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/36.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/36_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/36.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/36.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-        <!-- === ROW 6 === -->
-        <tr>
-          <td>6</td>
-          
-          <td class="prompt-col">
-
-            
-            <div class="small text-muted">An uplifting pop ballad with piano, strings. The mood is hopeful and inspiring, like walking down a sunlit road at dawn.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-45" aria-expanded="false" aria-controls="lyric-45">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-45" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                晨曦灑落喚醒的時光
-                chén xī sǎ luò huàn xǐng de shí guāng
-                腳步輕快迎向未來
-                jiǎo bù qīng kuài yíng xiàng wèi lái
-                心靈閃耀不滅的希望
-                xīn líng shǎn yào bù miè de xī wàng
-                每一瞬間都充滿力量
-                měi yí shùn jiān dōu chōng mǎn lì liàng
-                微風低語陪伴著夢想
-                wēi fēng dī yǔ péi bàn zhe mèng xiǎng
-                勇氣綻放在光芒之中
-                yǒng qì zhàn fàng zài guāng máng zhī zhōng
-
-                [Chorus]
-                晨曦之路引領方向
-                chén xī zhī lù yǐn lǐng fāng xiàng
-                心靈飛翔不再迷惘
-                xīn líng fēi xiáng bù zài mí wǎng
-                愛的歌聲迴盪天際
-                ài de gē shēng huí dàng tiān jì
-                未來就在光芒前方
-                wèi lái jiù zài guāng máng qián fāng
-
-                [Outro]
-                晨曦依舊照耀旅程
-                chén xī yī jiù zhào yào lǚ chéng
-                心靈堅定走向遠方
-                xīn líng jiān dìng zǒu xiàng yuǎn fāng
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_45.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/45.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/45_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/45.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/45.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-        <!-- === ROW 7 === -->
-        <tr>
-          <td>7</td>
-          
-          <td class="prompt-col">
-
-            
-            <div class="small text-muted">A dramatic ballad with piano, cello. The mood is sorrowful and reflective, like a nocturne echoing in an empty city.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-78" aria-expanded="false" aria-controls="lyric-78">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-78" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                孤城靜夜無聲的呼吸
-                gū chéng jìng yè wú shēng de hū xī
-                燈火映照破碎的夢
-                dēng huǒ yìng zhào pò suì de mèng
-                心靈低吟歲月滄桑
-                xīn líng dī yín suì yuè cāng sāng
-                腳步停留在舊時街
-                jiǎo bù tíng liú zài jiù shí jiē
-                夜色承載無盡思念
-                yè sè chéng zǎi wú jìn sī niàn
-                愛意悄然融入寂寞
-                ài yì qiāo rán róng rù jì mò
-
-                [Chorus]
-                孤城夜曲回響心底
-                gū chéng yè qǔ huí xiǎng xīn dǐ
-                夢想消散無人知曉
-                mèng xiǎng xiāo sàn wú rén zhī xiǎo
-                愛的旋律依舊悠揚
-                ài de xuán lǜ yī jiù yōu yáng
-                希望隱藏夜色深處
-                xī wàng yǐn cáng yè sè shēn chù
-
-                [Outro]
-                夜曲依舊低聲吟唱
-                yè qǔ yī jiù dī shēng yín chàng
-                孤城安眠在回聲裡
-                gū chéng ān mián zài huí shēng lǐ
-
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_78.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/78.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/78_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/78.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/78.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-        <!-- === ROW 8 === -->
-        <tr>
-          <td>8</td>
-          
-          <td class="prompt-col">
-
-            
-            <div class="small text-muted">A breezy pop song with electric guitar, synths. The mood is light and adventurous, like sailing away on a summer day.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-124" aria-expanded="false" aria-controls="lyric-124">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-124" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                夏日微風吹散雲彩
-                xià rì wēi fēng chuī sàn yún cǎi
-                海浪拍擊湧起節奏
-                hǎi làng pāi jī yǒng qǐ jié zòu
-                船帆張開奔向遠方
-                chuán fān zhāng kāi bēn xiàng yuǎn fāng
-                夢想揚起閃亮微笑
-                mèng xiǎng yáng qǐ shǎn liàng wēi xiào
-                愛意在陽光下綻放
-                ài yì zài yáng guāng xià zhàn fàng
-                希望在浪潮中飛翔
-                xī wàng zài làng cháo zhōng fēi xiáng
-
-                [Chorus]
-                夏日遠航無盡方向
-                xià rì yuǎn háng wú jìn fāng xiàng
-                夢想高歌隨風飄蕩
-                mèng xiǎng gāo gē suí fēng piāo dàng
-                愛的旋律自由閃亮
-                ài de xuán lǜ zì yóu shǎn liàng
-                未來等待新的航程
-                wèi lái děng dài xīn de háng chéng
-
-                [Outro]
-                遠航依舊映照海洋
-                yuǎn háng yī jiù yìng zhào hǎi yáng
-                光影延續無限希望
-                guāng yǐng yán xù wú xiàn xī wàng
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_124.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/124.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/124_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/124.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/124.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
-  </div>
-</div>
-<template id="disabled-hero">
 
   <!-- Optional: show exact local text prompts -->
   <details class="mt-2">
