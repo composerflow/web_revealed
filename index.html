@@ -740,11 +740,12 @@ td, th { padding: 12px; }
           <div class="alert alert-light border small mb-3">
             <strong>How to read:</strong> The first column shows the <em>lyrics</em> (shared). Each row fixes a <em>chord progression</em> (toggle it per row).
             Each of the three right columns plays audio with a different <em>local text prompt</em> (toggle prompt text per column).
+            5 chord progressions × (Lyrics + 3 sets of text prompts). Chord V is automatically generate by Accomontage2, other chord progressions are arrange by musicians. Chords and prompts are collapsible.
           </div>
 
           <div class="table-responsive">
             <table class="table table-sm table-bordered align-middle">
-              <caption class="text-left">3 chord progressions × (Lyrics + 3 local text prompts). Chords and prompts are collapsible.</caption>
+              <!-- <caption class="text-left">5 chord progressions × (Lyrics + 3 sets of text prompts). Chord V is automatically generate by Accomontage2, other chord progressions are arrange by musicians. Chords and prompts are collapsible.</caption> -->
               <thead class="thead-light">
                 <tr>
                   <th class="sticky-col-1" style="min-width:260px;">Lyrics (shared)</th>
@@ -779,7 +780,7 @@ td, th { padding: 12px; }
                 <!-- === FIRST ROW (Chord 1) === -->
                 <tr>
                   <!-- Lyrics: one cell spanning all 3 rows -->
-                  <td class="sticky-col-1 align-top p-0" rowspan="3">
+                  <td class="sticky-col-1 align-top p-0" rowspan="5">
                     <div class="p-2 text-left">
                       <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#matrix-lyrics" aria-expanded="true" aria-controls="matrix-lyrics">
                         <i class="bi bi-music-note-list"></i> Show lyrics
@@ -1244,7 +1245,7 @@ td, th { padding: 12px; }
                 <tr>
                   <td class="text-center align-top">
                     <div class="mb-1">
-                      <span class="badge badge-info">Chord III</span>
+                      <span class="badge badge-info">Chord V</span>
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-3" aria-expanded="false" aria-controls="prog-row-3">
                         <i class="bi bi-music-note-beamed"></i> Show progression
                       </button>
@@ -1446,7 +1447,7 @@ td, th { padding: 12px; }
                 <tr>
                   <td class="text-center align-top">
                     <div class="mb-1">
-                      <span class="badge badge-info">Chord III</span>
+                      <span class="badge badge-info">Chord IV</span>
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-4" aria-expanded="false" aria-controls="prog-row-4">
                         <i class="bi bi-music-note-beamed"></i> Show progression
                       </button>
@@ -1456,7 +1457,7 @@ td, th { padding: 12px; }
                     </audio>
                     <div id="prog-row-4" class="collapse mt-2 text-left">
                       <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
-                        <!-- paste the progression for Chord III -->
+                        <!-- paste the progression for Chord IV -->
                         0.000 0.531 G:min
                         0.531 1.062 G:min
                         1.062 1.593 D:min7
@@ -1627,7 +1628,7 @@ td, th { padding: 12px; }
                   </td>
                   <td class="text-center align-top">
                     <div class="mb-1">
-                      <span class="badge badge-info">Chord III</span>
+                      <span class="badge badge-info">Chord IV</span>
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-4">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
@@ -1636,7 +1637,7 @@ td, th { padding: 12px; }
                   </td>
                   <td class="text-center align-top">
                     <div class="mb-1">
-                      <span class="badge badge-info">Chord III</span>
+                      <span class="badge badge-info">Chord IV</span>
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-4">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
@@ -1648,7 +1649,7 @@ td, th { padding: 12px; }
                 <tr>
                   <td class="text-center align-top">
                     <div class="mb-1">
-                      <span class="badge badge-info">Chord III</span>
+                      <span class="badge badge-info">Chord V</span>
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-5" aria-expanded="false" aria-controls="prog-row-5">
                         <i class="bi bi-music-note-beamed"></i> Show progression
                       </button>
@@ -1658,7 +1659,7 @@ td, th { padding: 12px; }
                     </audio>
                     <div id="prog-row-5" class="collapse mt-2 text-left">
                       <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
-                        <!-- paste the progression for Chord III -->
+                        <!-- paste the progression for Chord V -->
                         0.000 0.531 D:sus2
                         0.531 1.062 D:sus2
                         1.062 1.593 D:sus2
@@ -1829,7 +1830,7 @@ td, th { padding: 12px; }
                   </td>
                   <td class="text-center align-top">
                     <div class="mb-1">
-                      <span class="badge badge-info">Chord III</span>
+                      <span class="badge badge-info">Chord V</span>
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-5">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
@@ -1838,7 +1839,7 @@ td, th { padding: 12px; }
                   </td>
                   <td class="text-center align-top">
                     <div class="mb-1">
-                      <span class="badge badge-info">Chord III</span>
+                      <span class="badge badge-info">Chord V</span>
                       <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#prog-row-5">Show progression</button>
                     </div>
                     <audio controls preload="metadata" style="width: 240px;">
