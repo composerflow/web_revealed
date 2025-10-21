@@ -71,7 +71,7 @@ td, th { padding: 12px; }
 <body class="bg-light">
 
 <div class="container py-4">
-  <h1 class="display-4 mb-3">ComposerFlow</h1>
+  <h1 class="display-4 mb-3">ComposerFlow: Step-by-Step Compositional Song Generation</h1>
   <section aria-label="Paper abstract" class="mb-4">
     <h2 class="h5 mb-2">Abstract</h2>
     <p class="lead mb-0">Open-source end-to-end song generators have emerged in the wake of commercial systems like Suno, offering one-shot music with lyrics but at the cost of large datasets and substantial compute. We propose ComposerFlow, a hierarchical pipeline that composes songs by chaining four specialized components—lyrics-to-melody, melody harmonization, singing-voice synthesis (SVS), and vocal-to-backing generation. This modular design is resource-efficient (single RTX 3090; ~6k hours of data) and editable: users can revise intermediate results (e.g., melody, chords, vocal) and deterministically regenerate all downstream audio. Leveraging SVS further mitigates common end-to-end issues such as unstable vocal timbre and phoneme errors. We evaluate our pipeline against representative end-to-end baselines and find comparable perceptual quality despite significantly lower training demands. We release audio demos at https://composerflow.github.io/web/. Our results suggest that modular, controllable pipelines are a practical alternative to monolithic song models, enabling rapid iteration and reliable production on accessible hardware.</p>
@@ -724,7 +724,7 @@ td, th { padding: 12px; }
     </table>
   </div>
 </div>
-<template id="disabled-hero">
+<!-- <template id="disabled-hero"> -->
 <!-- === CHORD PROGRESSION DEMO SECTION === -->
 <div class="container my-5">
   <div class="d-flex justify-content-between align-items-center mb-3">
@@ -1765,7 +1765,7 @@ td, th { padding: 12px; }
               <source src="ours_different_chord/demo_website/53000_test_diff_chord_r&b/text_7.0_con_1.5_rhythm_melody_strucure_chord_audio_key_0.3_500/mixed_0.wav" type="audio/wav">
             </audio>
           </td>
-          </template>
+          <!-- </template> -->
         </tr>
         <!-- === TEXT × CHORDS MATRIX (3×3) === -->
         <!-- === 3×4 MATRIX: Lyrics × (3 Local Text Prompts), Rows = Chord Progressions === -->
