@@ -1,0 +1,87 @@
+{
+    "config": {
+        "condition_type": [
+            "rhythm",
+            "key",
+            "structure",
+            "chord",
+            "audio",
+            "melody"
+        ],
+        "output_dir": "/volume/fundwo-test/MuseControlLite_song_generation/demo_website_real_melody/206_2_new",
+        "checkpoint_path": "/volume/fundwo-test/MuseControlLite/checkpoints/vocal2backing_all_condition_chord_v3/checkpoint-53000",
+        "transformer_ckpt_melody": "./checkpoints/melody-40000/model_1.safetensors",
+        "extractor_ckpt_melody": {
+            "melody": "./checkpoints/melody-40000/model.safetensors"
+        },
+        "GPU_id": "1",
+        "attn_processor_type": "rotary",
+        "apadapter": true,
+        "ap_scale": 1.0,
+        "guidance_scale_text": 7.0,
+        "guidance_scale_con": 1.5,
+        "guidance_scale_audio": 1.0,
+        "denoise_step": 50,
+        "sigma_min": 0.3,
+        "sigma_max": 500,
+        "weight_dtype": "fp32",
+        "negative_text_prompt": "noise, distortion, bad quality, low quality",
+        "use_audio_mask": false,
+        "audio_mask_start_seconds": 24,
+        "audio_mask_end_seconds": 47.55446712018141,
+        "use_musical_attribute_mask": false,
+        "musical_attribute_mask_start_seconds": 0,
+        "musical_attribute_mask_end_seconds": 0,
+        "no_text": false,
+        "vocal_audio_files": [
+            "/volume/fundwo-test/MuseControlLite_song_generation/generated_midi/lyrics_206_2/sample01.wav"
+        ],
+        "melody_midi": [
+            "/volume/fundwo-test/MuseControlLite_song_generation/generated_midi/lyrics_206_2/sample01.mid"
+        ],
+        "chord_info": [
+            "/volume/fundwo-test/MuseControlLite_song_generation/generated_midi/lyrics_206_2/chord/pop_standard/chord_btc_txt/sample01_chord_gen_filled_empty_bars.txt"
+        ],
+        "key_info": [
+            "/volume/fundwo-test/MuseControlLite_song_generation/generated_midi/lyrics_206_2/chord/pop_standard/processing_results.json"
+        ],
+        "structure_start_seconds": [
+            0,
+            19.5,
+            55.625,
+            80.688,
+            105.75,
+            153.3044671201814
+        ],
+        "structure_tag": [
+            "intro",
+            "verse",
+            "chorus",
+            "chorus",
+            "outro"
+        ],
+        "text": [
+            [
+                "mysterious piano backing",
+                "piano, bass with drum",
+                "piano, bass with drum",
+                "intense jazzy style",
+                "soft jazzy style",
+                "soft, emotional piano performance"
+            ]
+        ],
+        "self_attention_ckpt": "/volume/fundwo-test/MuseControlLite/checkpoints/vocal2backing_all_condition_chord_v3/checkpoint-53000/attn1_qkv.safetensors",
+        "transformer_ckpt": "/volume/fundwo-test/MuseControlLite/checkpoints/vocal2backing_all_condition_chord_v3/checkpoint-53000/attn_procs.safetensors",
+        "key_emb_ckpt": "/volume/fundwo-test/MuseControlLite/checkpoints/vocal2backing_all_condition_chord_v3/checkpoint-53000/key_emb.safetensors",
+        "struct_emb_ckpt": "/volume/fundwo-test/MuseControlLite/checkpoints/vocal2backing_all_condition_chord_v3/checkpoint-53000/struct_emb.safetensors",
+        "melody_emb_ckpt": "/volume/fundwo-test/MuseControlLite/checkpoints/vocal2backing_all_condition_chord_v3/checkpoint-53000/melody_emb.safetensors",
+        "chord_cnn_ckpt": "/volume/fundwo-test/MuseControlLite/checkpoints/vocal2backing_all_condition_chord_v3/checkpoint-53000/chord_cnn.safetensors",
+        "key_conditions": [
+            "C",
+            "C",
+            "C",
+            "C",
+            "C"
+        ]
+    }
+}
