@@ -1850,8 +1850,8 @@ td, th { padding: 12px; }
           <th class="sticky-col-1" style="min-width:60px;">#</th>
           <th class="sticky-col-2 prompt-col">Global Style Prompt</th>
           <th class="lyrics-col">Lyrics (shared)</th>
-          <th class="model-col">Male Vocal (Key: <span class="badge badge-dark">C Minor</span>)</th>
-          <th class="model-col">Female Vocal (Key: <span class="badge badge-info">E♭ Minor</span>)</th>
+          <th class="model-col">Male Vocal (Key: <span class="badge badge-dark">C Major</span>)</th>
+          <th class="model-col">Female Vocal (Key: <span class="badge badge-info">F# majot</span>)</th>
         </tr>
       </thead>
       <tbody>
@@ -2393,7 +2393,6 @@ td, th { padding: 12px; }
           <th class="sticky-col-1" style="min-width:60px;">#</th>
           <th style="min-width:240px;">Melody Reference</th>
           <th class="lyrics-col">Lyrics</th>
-          <th style="min-width:160px;">Key</th>
           <th class="model-col">Audio</th>
           <th style="min-width:200px;">Chords</th>
         </tr>
@@ -2406,7 +2405,7 @@ td, th { padding: 12px; }
 
           <!-- Melody Ref 1 -->
           <td class="align-top text-center">
-            <div class="mb-1"><span class="badge badge-dark">Melody Ref 1</span></div>
+            <!-- <div class="mb-1"><span class="badge badge-dark">Melody Ref 1</span></div> -->
             <audio controls preload="metadata" style="width:220px;">
               <!-- TODO: replace with your actual file -->
               <source src="demo_website_real_melody/205text_7.0_con_1.5_rhythm_key_structure_chord_audio_melody_0.3_500/sample01.wav" type="audio/wav">
@@ -2707,7 +2706,7 @@ td, th { padding: 12px; }
 
           <!-- Melody Ref 2 -->
           <td class="align-top text-center">
-            <div class="mb-1"><span class="badge badge-dark">Melody Ref 2</span></div>
+            <!-- <div class="mb-1"><span class="badge badge-dark">Melody Ref 2</span></div> -->
             <audio controls preload="metadata" style="width:220px;">
               <!-- TODO: replace with your actual file -->
               <source src="demo_website_real_melody/206text_7.0_con_1.5_rhythm_key_structure_chord_audio_melody_0.3_500/sample01.wav" type="audio/wav">
@@ -3040,6 +3039,20 @@ Text C: (paste your third text prompt here)
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script>
+  // Ensure only one <audio> plays at a time across the whole page
+  document.addEventListener('play', function (e) {
+    if (e.target.tagName.toLowerCase() !== 'audio') return;
+    const audios = document.getElementsByTagName('audio');
+    for (let i = 0; i < audios.length; i++) {
+      if (audios[i] !== e.target) {
+        audios[i].pause();
+        // Optional: reset others back to the start:
+        // audios[i].currentTime = 0;
+      }
+    }
+  }, true); // use capture so it catches events from all audio elements
+</script>
 
 <script>
   (function () {
