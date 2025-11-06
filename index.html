@@ -1948,98 +1948,108 @@ Chorus: E♭min | E♭min | B | C♯ | E♭min
     </table>
   </div>
 </div>
-<!-- === NEW SECTION: Using melody of existing song === -->
-<div class="container my-5">
+<!-- === NEW SECTION (3 songs): Using melody of existing song === -->
+<div class="container my-5" id="um3">
   <div class="d-flex justify-content-between align-items-center mb-2">
-    <h4 class="m-0">Using Melody of Existing Song</h4>
+    <h4 class="m-0">Using Melody of Existing Songs (3 Variants)</h4>
     <div>
-      <button id="expandAllUM" class="btn btn-sm btn-outline-primary mr-2">
+      <button id="expandAllUM3" class="btn btn-sm btn-outline-primary mr-2">
         <i class="bi bi-arrows-expand"></i> Expand all lyrics
       </button>
-      <button id="collapseAllUM" class="btn btn-sm btn-outline-secondary">
+      <button id="collapseAllUM3" class="btn btn-sm btn-outline-secondary">
         <i class="bi bi-arrows-collapse"></i> Collapse all lyrics
       </button>
     </div>
   </div>
 
-  <div class="alert alert-light border small">
-    Shared <em>melody reference</em> & same <em>local text prompt</em>; two versions with different lyrics and keys (thus different chord progressions).
+  <!-- Shared Global Style Prompt (same for all rows) -->
+  <div class="alert alert-light border small mb-3">
+    <strong>Global Style Prompt (shared):</strong>
+    A cinematic pop ballad; warm piano + strings, wide chorus, steady pulse; uplifting but reflective.
+    <div class="mt-1">
+      <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-local-prompt" aria-expanded="false" aria-controls="um3-local-prompt">
+        <i class="bi bi-card-text"></i> Show local text prompt
+      </button>
+      <div id="um3-local-prompt" class="collapse">
+        <div class="p-2 small pre-lines border rounded bg-white">
+[intro] piano arpeggio + soft strings swell<br>
+[verse] intimate vocal + light piano; subtle percussion<br>
+[chorus] full strings + drums open; wider pads; soaring hooks<br>
+[outro] instruments peel back to piano; gentle tail
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="table-responsive">
     <table class="table table-sm table-bordered align-middle">
-      <caption class="text-left">Two songs generated with the same melody reference but different lyrics and keys.</caption>
+      <caption class="text-left">Three songs generated with different melody references, lyrics, and keys (thus different chord progressions), using the same global style prompt.</caption>
       <thead class="thead-light">
         <tr>
           <th class="sticky-col-1" style="min-width:60px;">#</th>
-          <th class="sticky-col-2 prompt-col">Global Style Prompt</th>
-          <th style="min-width:220px;">Melody Reference</th>
-          <th class="lyrics-col">Lyrics A (Key: <span class="badge badge-primary">D Minor</span>)</th>
-          <th class="lyrics-col">Lyrics B (Key: <span class="badge badge-warning">F Minor</span>)</th>
+          <th style="min-width:240px;">Melody Reference</th>
+          <th class="lyrics-col">Lyrics</th>
+          <th style="min-width:160px;">Key</th>
+          <th class="model-col">Audio</th>
+          <th style="min-width:200px;">Chords</th>
         </tr>
       </thead>
       <tbody>
-        <!-- === UM ROW 1 === -->
+
+        <!-- === ROW 1 === -->
         <tr>
           <td>1</td>
-          <td class="prompt-col">
-            <div class="small text-muted">
-              A cinematic pop ballad; warm piano + strings, wide chorus, steady pulse; uplifting but reflective.
-            </div>
-            <div class="mt-1">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-local-prompt-1" aria-expanded="false" aria-controls="um-local-prompt-1">
-                <i class="bi bi-card-text"></i> Show local text prompt
-              </button>
-              <div id="um-local-prompt-1" class="collapse">
-                <div class="p-2 small pre-lines border rounded bg-white">
-                  [intro] piano arpeggio + soft strings swell;<br>
-                  [verse] intimate vocal + light piano; subtle percussion;<br>
-                  [chorus] full strings + drums open; wider pads; soaring hooks;<br>
-                  [outro] instruments peel back to piano; gentle tail.
-                </div>
-              </div>
-            </div>
-          </td>
 
-          <!-- Melody reference -->
+          <!-- Melody Ref 1 -->
           <td class="align-top text-center">
-            <div class="mb-1"><span class="badge badge-dark">Melody Ref</span></div>
-            <audio controls preload="metadata" style="width:260px;">
+            <div class="mb-1"><span class="badge badge-dark">Melody Ref 1</span></div>
+            <audio controls preload="metadata" style="width:220px;">
               <!-- TODO: replace with your actual file -->
-              <source src="melody_ref/ballad_ref.wav" type="audio/wav">
+              <source src="melody_ref/ref_1.wav" type="audio/wav">
             </audio>
           </td>
 
-          <!-- Lyrics A -->
+          <!-- Lyrics 1 -->
           <td class="p-0 align-top">
-            <div class="p-2 text-left d-flex justify-content-between align-items-center">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-lyric-a-1" aria-expanded="false" aria-controls="um-lyric-a-1">
-                <i class="bi bi-music-note-list"></i> Show lyrics A
-              </button>
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-prog-a-1" aria-expanded="false" aria-controls="um-prog-a-1">
-                <i class="bi bi-music-note-beamed"></i> Show progression (Dmin)
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-lyric-1" aria-expanded="false" aria-controls="um3-lyric-1">
+                <i class="bi bi-music-note-list"></i> Show lyrics (Song 1)
               </button>
             </div>
-            <div class="px-2 pb-2">
-              <audio controls preload="metadata" style="width:260px;">
-                <!-- TODO: replace with your actual file -->
-                <source src="um/a_key_dmin_1.wav" type="audio/wav">
-              </audio>
-            </div>
-            <div id="um-lyric-a-1" class="collapse">
+            <div id="um3-lyric-1" class="collapse">
               <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-[Verse A]
+[Verse]
 晨曦灑落喚醒的時光
 腳步輕快迎向未來
 心靈閃耀不滅的希望
 每一瞬間都充滿力量
 
-[Chorus A]
+[Chorus]
 我們向前 不再迷惘
 光芒引路 夢在遠方
               </div>
             </div>
-            <div id="um-prog-a-1" class="collapse">
+          </td>
+
+          <!-- Key 1 -->
+          <td class="align-top">
+            <span class="badge badge-primary">D Minor</span>
+          </td>
+
+          <!-- Audio 1 -->
+          <td class="align-top text-center">
+            <audio controls preload="metadata" style="width:260px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="um3/song_1_key_dmin.wav" type="audio/wav">
+            </audio>
+          </td>
+
+          <!-- Chords 1 -->
+          <td class="align-top">
+            <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-prog-1" aria-expanded="false" aria-controls="um3-prog-1">
+              <i class="bi bi-music-note-beamed"></i> Show progression
+            </button>
+            <div id="um3-prog-1" class="collapse mt-2">
               <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
 Dmin — Bb — F — C (x2)<br>
 Verse: Dmin | Bb | F | C<br>
@@ -2047,37 +2057,62 @@ Chorus: Dmin | Dmin | Bb | C | Dmin
               </div>
             </div>
           </td>
+        </tr>
 
-          <!-- Lyrics B -->
+        <!-- === ROW 2 === -->
+        <tr>
+          <td>2</td>
+
+          <!-- Melody Ref 2 -->
+          <td class="align-top text-center">
+            <div class="mb-1"><span class="badge badge-dark">Melody Ref 2</span></div>
+            <audio controls preload="metadata" style="width:220px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="melody_ref/ref_2.wav" type="audio/wav">
+            </audio>
+          </td>
+
+          <!-- Lyrics 2 -->
           <td class="p-0 align-top">
-            <div class="p-2 text-left d-flex justify-content-between align-items-center">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-lyric-b-1" aria-expanded="false" aria-controls="um-lyric-b-1">
-                <i class="bi bi-music-note-list"></i> Show lyrics B
-              </button>
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-prog-b-1" aria-expanded="false" aria-controls="um-prog-b-1">
-                <i class="bi bi-music-note-beamed"></i> Show progression (Fmin)
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-lyric-2" aria-expanded="false" aria-controls="um3-lyric-2">
+                <i class="bi bi-music-note-list"></i> Show lyrics (Song 2)
               </button>
             </div>
-            <div class="px-2 pb-2">
-              <audio controls preload="metadata" style="width:260px;">
-                <!-- TODO: replace with your actual file -->
-                <source src="um/b_key_fmin_1.wav" type="audio/wav">
-              </audio>
-            </div>
-            <div id="um-lyric-b-1" class="collapse">
+            <div id="um3-lyric-2" class="collapse">
               <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-[Verse B]
+[Verse]
 夜色映照無盡的街
 霓虹閃爍掩蓋心事
 腳步迷失在夢的邊界
 風聲低語引領前行
 
-[Chorus B]
+[Chorus]
 別怕黑夜 會有晨光
 在你心上 點亮希望
               </div>
             </div>
-            <div id="um-prog-b-1" class="collapse">
+          </td>
+
+          <!-- Key 2 -->
+          <td class="align-top">
+            <span class="badge badge-warning">F Minor</span>
+          </td>
+
+          <!-- Audio 2 -->
+          <td class="align-top text-center">
+            <audio controls preload="metadata" style="width:260px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="um3/song_2_key_fmin.wav" type="audio/wav">
+            </audio>
+          </td>
+
+          <!-- Chords 2 -->
+          <td class="align-top">
+            <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-prog-2" aria-expanded="false" aria-controls="um3-prog-2">
+              <i class="bi bi-music-note-beamed"></i> Show progression
+            </button>
+            <div id="um3-prog-2" class="collapse mt-2">
               <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
 Fmin — Db — Ab — E♭ (x2)<br>
 Verse: Fmin | Db | Ab | E♭<br>
@@ -2086,11 +2121,75 @@ Chorus: Fmin | Fmin | Db | E♭ | Fmin
             </div>
           </td>
         </tr>
-        <!-- Add more rows as needed -->
+
+        <!-- === ROW 3 === -->
+        <tr>
+          <td>3</td>
+
+          <!-- Melody Ref 3 -->
+          <td class="align-top text-center">
+            <div class="mb-1"><span class="badge badge-dark">Melody Ref 3</span></div>
+            <audio controls preload="metadata" style="width:220px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="melody_ref/ref_3.wav" type="audio/wav">
+            </audio>
+          </td>
+
+          <!-- Lyrics 3 -->
+          <td class="p-0 align-top">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-lyric-3" aria-expanded="false" aria-controls="um3-lyric-3">
+                <i class="bi bi-music-note-list"></i> Show lyrics (Song 3)
+              </button>
+            </div>
+            <div id="um3-lyric-3" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+[Verse]
+孤城靜夜無聲的呼吸
+燈火映照破碎的夢
+心靈低吟歲月滄桑
+腳步停留在舊時街
+
+[Chorus]
+夜曲回響 在心底
+願你平安 在遠方
+              </div>
+            </div>
+          </td>
+
+          <!-- Key 3 -->
+          <td class="align-top">
+            <span class="badge badge-info">A Minor</span>
+          </td>
+
+          <!-- Audio 3 -->
+          <td class="align-top text-center">
+            <audio controls preload="metadata" style="width:260px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="um3/song_3_key_amin.wav" type="audio/wav">
+            </audio>
+          </td>
+
+          <!-- Chords 3 -->
+          <td class="align-top">
+            <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-prog-3" aria-expanded="false" aria-controls="um3-prog-3">
+              <i class="bi bi-music-note-beamed"></i> Show progression
+            </button>
+            <div id="um3-prog-3" class="collapse mt-2">
+              <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
+Amin — F — C — G (x2)<br>
+Verse: Amin | F | C | G<br>
+Chorus: Amin | Amin | F | G | Amin
+              </div>
+            </div>
+          </td>
+        </tr>
+
       </tbody>
     </table>
   </div>
 </div>
+
 <script>
   (function () {
     var scopes = [].slice.call(document.querySelectorAll('#um-lyric-a-1, #um-lyric-b-1, [id^="um-lyric-a-"], [id^="um-lyric-b-"]'));
