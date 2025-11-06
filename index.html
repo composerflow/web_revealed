@@ -2353,34 +2353,33 @@ td, th { padding: 12px; }
     </table>
   </div>
 </div>
-<!-- === NEW SECTION (3 songs): Using melody of existing song === -->
-<div class="container my-5" id="um3">
+
+<!-- === NEW SECTION (2 songs): Using melody of existing songs === -->
+<div class="container my-5" id="um2">
   <div class="d-flex justify-content-between align-items-center mb-2">
-    <h4 class="m-0">Using Melody of Existing Songs (3 Variants)</h4>
+    <h4 class="m-0">Using Melody of Existing Songs (2 Variants)</h4>
     <div>
-      <button id="expandAllUM3" class="btn btn-sm btn-outline-primary mr-2">
+      <button id="expandAllUM2" class="btn btn-sm btn-outline-primary mr-2">
         <i class="bi bi-arrows-expand"></i> Expand all lyrics
       </button>
-      <button id="collapseAllUM3" class="btn btn-sm btn-outline-secondary">
+      <button id="collapseAllUM2" class="btn btn-sm btn-outline-secondary">
         <i class="bi bi-arrows-collapse"></i> Collapse all lyrics
       </button>
     </div>
   </div>
 
-  <!-- Shared Global Style Prompt (same for all rows) -->
+  <!-- Shared Global Style Prompt (same for both rows) -->
   <div class="alert alert-light border small mb-3">
-    <strong>Global Style Prompt (shared):</strong>
-    A cinematic pop ballad; warm piano + strings, wide chorus, steady pulse; uplifting but reflective.
     <div class="mt-1">
-      <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-local-prompt" aria-expanded="false" aria-controls="um3-local-prompt">
+      <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um2-local-prompt" aria-expanded="false" aria-controls="um2-local-prompt">
         <i class="bi bi-card-text"></i> Show local text prompt
       </button>
-      <div id="um3-local-prompt" class="collapse">
+      <div id="um2-local-prompt" class="collapse">
         <div class="p-2 small pre-lines border rounded bg-white">
-[intro] piano arpeggio + soft strings swell<br>
-[verse] intimate vocal + light piano; subtle percussion<br>
-[chorus] full strings + drums open; wider pads; soaring hooks<br>
-[outro] instruments peel back to piano; gentle tail
+[intro] mysterious piano backing.<br>
+[verse] piano, bass with drum.<br>
+[chorus] jazz style.<br>
+[outro] soft, emotional piano performance
         </div>
       </div>
     </div>
@@ -2388,7 +2387,7 @@ td, th { padding: 12px; }
 
   <div class="table-responsive">
     <table class="table table-sm table-bordered align-middle">
-      <caption class="text-left">Three songs generated with different melody references, lyrics, and keys (thus different chord progressions), using the same global style prompt.</caption>
+      <caption class="text-left">Two songs with different melody references, lyrics, and keys (thus different chord progressions), using the same global + local text prompts.</caption>
       <thead class="thead-light">
         <tr>
           <th class="sticky-col-1" style="min-width:60px;">#</th>
@@ -2410,50 +2409,293 @@ td, th { padding: 12px; }
             <div class="mb-1"><span class="badge badge-dark">Melody Ref 1</span></div>
             <audio controls preload="metadata" style="width:220px;">
               <!-- TODO: replace with your actual file -->
-              <source src="melody_ref/ref_1.wav" type="audio/wav">
+              <source src="demo_website_real_melody/205text_7.0_con_1.5_rhythm_key_structure_chord_audio_melody_0.3_500/sample01.wav" type="audio/wav">
             </audio>
           </td>
 
           <!-- Lyrics 1 -->
           <td class="p-0 align-top">
             <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-lyric-1" aria-expanded="false" aria-controls="um3-lyric-1">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um2-lyric-1" aria-expanded="false" aria-controls="um2-lyric-1">
                 <i class="bi bi-music-note-list"></i> Show lyrics (Song 1)
               </button>
             </div>
-            <div id="um3-lyric-1" class="collapse">
+            <div id="um2-lyric-1" class="collapse">
               <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-[Verse]
-晨曦灑落喚醒的時光
-腳步輕快迎向未來
-心靈閃耀不滅的希望
-每一瞬間都充滿力量
-
-[Chorus]
-我們向前 不再迷惘
-光芒引路 夢在遠方
+                [Verse]
+                还记得那场音乐会的烟火#
+                还记得那个凉凉的深秋#
+                还记得人潮把你推向了我#
+                游乐园拥挤的正是时候#
+                一个夜晚坚持不睡的等候#
+                一起泡温泉奢侈的享受#
+                有一次日记里愚蠢的困惑#
+                因为你的微笑幻化成风#
+                你大大的勇敢保护着我#
+                我小小的关怀喋喋不休#
+                感谢我们一起走了那么久#
+                又再一次回到凉凉深秋#
+                [Chorus]
+                给你我的手
+                像温柔野兽
+                把自由交给草原的辽阔#
+                我们小手拉大手
+                一起郊游
+                今天别想太多#
+                你是我的梦
+                像北方的风
+                吹着南方暖洋洋的哀愁#
+                [Outro]
+                我们小手拉大手
+                今天加#油向昨天挥挥手#
               </div>
             </div>
           </td>
-
           <!-- Audio 1 -->
           <td class="align-top text-center">
             <audio controls preload="metadata" style="width:260px;">
               <!-- TODO: replace with your actual file -->
-              <source src="um3/song_1_key_dmin.wav" type="audio/wav">
+              <source src="demo_website_real_melody/205text_7.0_con_1.5_rhythm_key_structure_chord_audio_melody_0.3_500/mixed_0.wav" type="audio/wav">
             </audio>
           </td>
 
           <!-- Chords 1 -->
           <td class="align-top">
-            <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-prog-1" aria-expanded="false" aria-controls="um3-prog-1">
+            <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um2-prog-1" aria-expanded="false" aria-controls="um2-prog-1">
               <i class="bi bi-music-note-beamed"></i> Show progression
             </button>
-            <div id="um3-prog-1" class="collapse mt-2">
+            <div id="um2-prog-1" class="collapse mt-2">
               <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
-Dmin — Bb — F — C (x2)<br>
-Verse: Dmin | Bb | F | C<br>
-Chorus: Dmin | Dmin | Bb | C | Dmin
+                0.000 0.462 D:min
+                0.462 0.923 D:min
+                0.923 1.385 D:min
+                1.385 1.846 D:min
+                1.846 2.308 C
+                2.308 2.769 C
+                2.769 3.231 C
+                3.231 3.692 C
+                3.692 4.154 A:min
+                4.154 4.615 A:min
+                4.615 5.077 A:min
+                5.077 5.538 A:min
+                5.538 6.000 G
+                6.000 6.462 G
+                6.462 6.923 G
+                6.923 7.385 G
+                7.385 7.846 D:min
+                7.846 8.308 D:min
+                8.308 8.769 D:min
+                8.769 9.231 D:min
+                9.231 9.692 C
+                9.692 10.154 C
+                10.154 10.615 C
+                10.615 11.077 C
+                11.077 11.538 A:min
+                11.538 12.000 A:min
+                12.000 12.461 A:min
+                12.461 12.923 A:min
+                12.923 13.385 G
+                13.385 13.846 G
+                13.846 14.308 G
+                14.308 14.769 G
+                14.769 15.231 A:min
+                15.231 15.692 A:min
+                15.692 16.154 A:min
+                16.154 16.615 A:min
+                16.615 17.077 C
+                17.077 17.538 C
+                17.538 18.000 C
+                18.000 18.461 C
+                18.461 18.923 F
+                18.923 19.385 F
+                19.385 19.846 F
+                19.846 20.308 F
+                20.308 20.769 G
+                20.769 21.231 G
+                21.231 21.692 G
+                21.692 22.154 G
+                22.154 22.615 D:min
+                22.615 23.077 D:min
+                23.077 23.538 D:min
+                23.538 24.000 D:min
+                24.000 24.461 E:min
+                24.461 24.923 E:min
+                24.923 25.385 E:min
+                25.385 25.846 E:min
+                25.846 26.308 F
+                26.308 26.769 F
+                26.769 27.231 F
+                27.231 27.692 F
+                27.692 28.154 G
+                28.154 28.615 G
+                28.615 29.077 G
+                29.077 29.538 G
+                29.538 30.000 C
+                30.000 30.461 C
+                30.461 30.923 C
+                30.923 31.385 C
+                31.385 31.846 D:min
+                31.846 32.308 D:min
+                32.308 32.769 D:min
+                32.769 33.231 D:min
+                33.231 33.692 C
+                33.692 34.154 C
+                34.154 34.615 C:min7
+                34.615 35.077 C:min7
+                35.077 35.538 A:min
+                35.538 36.000 A:min
+                36.000 36.461 A:min
+                36.461 36.923 A:min
+                36.923 37.384 G
+                37.384 37.846 G
+                37.846 38.308 G
+                38.308 38.769 G
+                38.769 39.231 D:min
+                39.231 39.692 D:min
+                39.692 40.154 D:min
+                40.154 40.615 D:min
+                40.615 41.077 C
+                41.077 41.538 C
+                41.538 42.000 C:min7
+                42.000 42.461 C:min7
+                42.461 42.923 A:min
+                42.923 43.384 A:min
+                43.384 43.846 A:min
+                43.846 44.308 A:min
+                44.308 44.769 G
+                44.769 45.231 G
+                45.231 45.692 G
+                45.692 46.154 G
+                46.154 46.615 A:min7
+                46.615 47.077 A:min7
+                47.077 47.538 A:min7
+                47.538 48.000 A:min7
+                48.000 48.461 C
+                48.461 48.923 C
+                48.923 49.384 C:min7
+                49.384 49.846 C:min7
+                49.846 50.308 F
+                50.308 50.769 F
+                50.769 51.231 F:min7
+                51.231 51.692 F:min7
+                51.692 52.154 G
+                52.154 52.615 G
+                52.615 53.077 G
+                53.077 53.538 G
+                53.538 54.000 D:min
+                54.000 54.461 D:min
+                54.461 54.923 D:min
+                54.923 55.384 D:min
+                55.384 55.846 E:min
+                55.846 56.308 E:min
+                56.308 56.769 E:min7
+                56.769 57.231 E:min7
+                57.231 57.692 F
+                57.692 58.154 F
+                58.154 58.615 F
+                58.615 59.077 F
+                59.077 59.538 G
+                59.538 60.000 G
+                60.000 60.461 G:7
+                60.461 60.923 G:7
+                60.923 61.384 C
+                61.384 61.846 C
+                61.846 62.307 C
+                62.307 62.769 C
+                62.769 63.231 F
+                63.231 63.692 F
+                63.692 64.154 F
+                64.154 64.615 F
+                64.615 65.077 G
+                65.077 65.538 G
+                65.538 66.000 G
+                66.000 66.461 G
+                66.461 66.923 C
+                66.923 67.384 C
+                67.384 67.846 C
+                67.846 68.307 C
+                68.307 68.769 C
+                68.769 69.231 C
+                69.231 69.692 C
+                69.692 70.154 C
+                70.154 70.615 F
+                70.615 71.077 F
+                71.077 71.538 F:min7
+                71.538 72.000 F:min7
+                72.000 72.461 G
+                72.461 72.923 G
+                72.923 73.384 G:min7
+                73.384 73.846 G:min7
+                73.846 74.307 C
+                74.307 74.769 C
+                74.769 75.231 C
+                75.231 75.692 C
+                75.692 76.154 F:min7
+                76.154 76.615 F:min7
+                76.615 77.077 F:min7
+                77.077 77.538 F:min7
+                77.538 78.000 G
+                78.000 78.461 G
+                78.461 78.923 G
+                78.923 79.384 G
+                79.384 79.846 A:min
+                79.846 80.307 A:min
+                80.307 80.769 A:min
+                80.769 81.231 A:min
+                81.231 81.692 C
+                81.692 82.154 C
+                82.154 82.615 C
+                82.615 83.077 C
+                83.077 83.538 F:min7
+                83.538 84.000 F:min7
+                84.000 84.461 F
+                84.461 84.923 F
+                84.923 85.384 G:7
+                85.384 85.846 G:7
+                85.846 86.307 G
+                86.307 86.769 G
+                86.769 87.230 A:min
+                87.230 87.692 A:min
+                87.692 88.154 A:min
+                88.154 88.615 A:min
+                88.615 89.077 C
+                89.077 89.538 C
+                89.538 90.000 C
+                90.000 90.461 C
+                90.461 90.923 F:min7
+                90.923 91.384 F:min7
+                91.384 91.846 F:min7
+                91.846 92.307 F:min7
+                92.307 92.769 G
+                92.769 93.230 G
+                93.230 93.692 G
+                93.692 94.154 G
+                94.154 94.615 A:min
+                94.615 95.077 A:min
+                95.077 95.538 A:min
+                95.538 96.000 A:min
+                96.000 96.461 C
+                96.461 96.923 C
+                96.923 97.384 C
+                97.384 97.846 C
+                97.846 98.307 F:min7
+                98.307 98.769 F:min7
+                98.769 99.230 F
+                99.230 99.692 F
+                99.692 100.154 G:7
+                100.154 100.615 G:7
+                100.615 101.077 G
+                101.077 101.538 G
+                101.538 102.000 A:min
+                102.000 102.461 A:min
+                102.461 102.923 A:min
+                102.923 103.384 A:min
+                103.384 103.846 C
+                103.846 104.307 C
+                104.307 104.769 C
+                104.769 105.230 C
+                105.230 105.692 N
+
               </div>
             </div>
           </td>
@@ -2468,71 +2710,296 @@ Chorus: Dmin | Dmin | Bb | C | Dmin
             <div class="mb-1"><span class="badge badge-dark">Melody Ref 2</span></div>
             <audio controls preload="metadata" style="width:220px;">
               <!-- TODO: replace with your actual file -->
-              <source src="melody_ref/ref_2.wav" type="audio/wav">
+              <source src="demo_website_real_melody/206text_7.0_con_1.5_rhythm_key_structure_chord_audio_melody_0.3_500/sample01.wav" type="audio/wav">
             </audio>
           </td>
 
           <!-- Lyrics 2 -->
           <td class="p-0 align-top">
             <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-lyric-2" aria-expanded="false" aria-controls="um3-lyric-2">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um2-lyric-2" aria-expanded="false" aria-controls="um2-lyric-2">
                 <i class="bi bi-music-note-list"></i> Show lyrics (Song 2)
               </button>
             </div>
-            <div id="um3-lyric-2" class="collapse">
+            <div id="um2-lyric-2" class="collapse">
               <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-[Verse]
-夜色映照無盡的街
-霓虹閃爍掩蓋心事
-腳步迷失在夢的邊界
-風聲低語引領前行
-
-[Chorus]
-別怕黑夜 會有晨光
-在你心上 點亮希望
+                <Verse>
+                说不上为什么我变得很主动
+                若爱上一个人什么都会值得去#做
+                我想大声宣布对你依依不舍
+                连隔壁邻居都猜到我现在的感#受
+                河边的风在吹着头发飘动
+                牵着你的手一阵莫名#感动
+                我想带你回我的外婆家
+                <Chorus>
+                一起看着日#落一直到我们都睡#着
+                我想就这样牵着你的手不放#开
+                爱能不能够永远单纯没有悲哀
+                我想带你骑单车
+                我想和你看棒球
+                想这样没担忧
+                唱着歌一直#走
+                我想就这样牵着你的手不放#开
+                爱可不可以简简单单没有伤害
+                你靠着我的肩膀
+                你在我胸口睡着
+                像这样的生活
+                我爱你你爱我
+                <Outro>
+                想简#简#单#单#爱
+                想简#简#单#单#爱
               </div>
             </div>
           </td>
-
           <!-- Audio 2 -->
           <td class="align-top text-center">
             <audio controls preload="metadata" style="width:260px;">
               <!-- TODO: replace with your actual file -->
-              <source src="um3/song_2_key_fmin.wav" type="audio/wav">
+              <source src="demo_website_real_melody/206text_7.0_con_1.5_rhythm_key_structure_chord_audio_melody_0.3_500/mixed_0.wav" type="audio/wav">
             </audio>
           </td>
 
           <!-- Chords 2 -->
           <td class="align-top">
-            <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um3-prog-2" aria-expanded="false" aria-controls="um3-prog-2">
+            <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um2-prog-2" aria-expanded="false" aria-controls="um2-prog-2">
               <i class="bi bi-music-note-beamed"></i> Show progression
             </button>
-            <div id="um3-prog-2" class="collapse mt-2">
+            <div id="um2-prog-2" class="collapse mt-2">
               <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
-Fmin — Db — Ab — E♭ (x2)<br>
-Verse: Fmin | Db | Ab | E♭<br>
-Chorus: Fmin | Fmin | Db | E♭ | Fmin
+                0.000 0.619 C
+                0.619 1.237 C
+                1.237 1.856 C
+                1.856 2.474 C
+                2.474 3.093 F:min
+                3.093 3.711 F:min
+                3.711 4.330 F:min
+                4.330 4.948 F:min
+                4.948 5.567 C
+                5.567 6.186 C
+                6.186 6.804 C
+                6.804 7.423 C
+                7.423 8.041 F:min
+                8.041 8.660 F:min
+                8.660 9.278 F:min
+                9.278 9.897 F:min
+                9.897 10.515 C
+                10.515 11.134 C
+                11.134 11.753 C
+                11.753 12.371 C
+                12.371 12.990 A:min
+                12.990 13.608 A:min
+                13.608 14.227 A:min
+                14.227 14.845 A:min
+                14.845 15.464 C
+                15.464 16.082 C
+                16.082 16.701 C
+                16.701 17.320 C
+                17.320 17.938 A:min
+                17.938 18.557 A:min
+                18.557 19.175 A:min
+                19.175 19.794 A:min
+                19.794 20.412 C
+                20.412 21.031 C
+                21.031 21.649 C
+                21.649 22.268 C
+                22.268 22.887 F
+                22.887 23.505 F
+                23.505 24.124 F
+                24.124 24.742 F
+                24.742 25.361 G
+                25.361 25.979 G
+                25.979 26.598 G
+                26.598 27.217 G
+                27.217 27.835 C
+                27.835 28.454 C
+                28.454 29.072 C
+                29.072 29.691 C
+                29.691 30.309 C
+                30.309 30.928 C
+                30.928 31.546 C
+                31.546 32.165 C
+                32.165 32.784 F:min
+                32.784 33.402 F:min
+                33.402 34.021 F:min
+                34.021 34.639 F:min
+                34.639 35.258 C
+                35.258 35.876 C
+                35.876 36.495 C
+                36.495 37.113 C
+                37.113 37.732 F:min
+                37.732 38.351 F:min
+                38.351 38.969 F:min
+                38.969 39.588 F:min
+                39.588 40.206 C
+                40.206 40.825 C
+                40.825 41.443 C
+                41.443 42.062 C
+                42.062 42.680 A:min
+                42.680 43.299 A:min
+                43.299 43.918 A:min7
+                43.918 44.536 A:min7
+                44.536 45.155 C
+                45.155 45.773 C
+                45.773 46.392 C
+                46.392 47.010 C
+                47.010 47.629 A:min
+                47.629 48.247 A:min
+                48.247 48.866 A:min
+                48.866 49.485 A:min
+                49.485 50.103 C:min7
+                50.103 50.722 C:min7
+                50.722 51.340 C
+                51.340 51.959 C
+                51.959 52.577 F
+                52.577 53.196 F
+                53.196 53.814 F
+                53.814 54.433 F
+                54.433 55.052 G
+                55.052 55.670 G
+                55.670 56.289 G:7
+                56.289 56.907 G:7
+                56.907 57.526 C
+                57.526 58.144 C
+                58.144 58.763 C
+                58.763 59.381 C
+                59.381 60.000 C:min7
+                60.000 60.619 C:min7
+                60.619 61.237 C
+                61.237 61.856 C
+                61.856 62.474 F:min7
+                62.474 63.093 F:min7
+                63.093 63.711 F:min7
+                63.711 64.330 F:min7
+                64.330 64.948 G:7
+                64.948 65.567 G:7
+                65.567 66.186 G
+                66.186 66.804 G
+                66.804 67.423 C
+                67.423 68.041 C
+                68.041 68.660 C
+                68.660 69.278 C
+                69.278 69.897 D:min
+                69.897 70.515 D:min
+                70.515 71.134 D:min
+                71.134 71.753 D:min
+                71.753 72.371 C:min
+                72.371 72.990 C:min
+                72.990 73.608 C:min
+                73.608 74.227 C:min
+                74.227 74.845 G:min
+                74.845 75.464 G:min
+                75.464 76.083 G:min
+                76.083 76.701 G:min
+                76.701 77.320 C
+                77.320 77.938 C
+                77.938 78.557 C
+                78.557 79.175 C
+                79.175 79.794 G:min
+                79.794 80.412 G:min
+                80.412 81.031 G:min
+                81.031 81.650 G:min
+                81.650 82.268 A:min7
+                82.268 82.887 A:min7
+                82.887 83.505 A:min7
+                83.505 84.124 A:min7
+                84.124 84.742 F:min7
+                84.742 85.361 F:min7
+                85.361 85.979 F
+                85.979 86.598 F
+                86.598 87.217 C:min
+                87.217 87.835 C:min
+                87.835 88.454 C:min
+                88.454 89.072 C:min
+                89.072 89.691 D:min
+                89.691 90.309 D:min
+                90.309 90.928 D:min
+                90.928 91.546 D:min
+                91.546 92.165 C:min
+                92.165 92.784 C:min
+                92.784 93.402 C:min
+                93.402 94.021 C:min
+                94.021 94.639 G:min
+                94.639 95.258 G:min
+                95.258 95.876 G:min
+                95.876 96.495 G:min
+                96.495 97.113 C
+                97.113 97.732 C
+                97.732 98.351 C
+                98.351 98.969 C
+                98.969 99.588 G:min
+                99.588 100.206 G:min
+                100.206 100.825 G:min
+                100.825 101.443 G:min
+                101.443 102.062 A:min7
+                102.062 102.680 A:min7
+                102.680 103.299 A:min7
+                103.299 103.918 A:min7
+                103.918 104.536 F:min7
+                104.536 105.155 F:min7
+                105.155 105.773 F
+                105.773 106.392 F
+                106.392 107.010 C:min
+                107.010 107.629 C:min
+                107.629 108.247 C:min
+                108.247 108.866 C:min
+                108.866 109.485 A:min
+                109.485 110.103 A:min
+                110.103 110.722 A:min7
+                110.722 111.340 A:min7
+                111.340 111.959 C
+                111.959 112.577 C
+                112.577 113.196 C
+                113.196 113.814 C
+                113.814 114.433 F
+                114.433 115.052 F
+                115.052 115.670 F
+                115.670 116.289 F
+                116.289 116.907 G
+                116.907 117.526 G
+                117.526 118.144 G
+                118.144 118.763 G
+                118.763 119.382 A:min
+                119.382 120.000 A:min
+                120.000 120.619 A:min7
+                120.619 121.237 A:min7
+                121.237 121.856 C
+                121.856 122.474 C
+                122.474 123.093 C
+                123.093 123.711 C
+                123.711 124.330 F
+                124.330 124.949 F
+                124.949 125.567 F
+                125.567 126.186 F
+                126.186 126.804 G
+                126.804 127.423 G
+                127.423 128.041 G
+                128.041 128.660 G
+                128.660 129.278 N
+
               </div>
             </div>
           </td>
         </tr>
+
       </tbody>
     </table>
   </div>
 </div>
 
 <script>
+  // Expand/Collapse all lyrics in the 2-song section
   (function () {
-    var scopes = [].slice.call(document.querySelectorAll('#um-lyric-a-1, #um-lyric-b-1, [id^="um-lyric-a-"], [id^="um-lyric-b-"]'));
-    var exp = document.getElementById('expandAllUM');
-    var col = document.getElementById('collapseAllUM');
+    var areas = [].slice.call(document.querySelectorAll('#um2 [id^="um2-lyric-"]'));
+    var exp = document.getElementById('expandAllUM2');
+    var col = document.getElementById('collapseAllUM2');
     if (exp && col) {
-      exp.addEventListener('click', function () { scopes.forEach(function (el) { $(el).collapse('show'); }); });
-      col.addEventListener('click', function () { scopes.forEach(function (el) { $(el).collapse('hide'); }); });
+      exp.addEventListener('click', function () { areas.forEach(function (el) { $(el).collapse('show'); }); });
+      col.addEventListener('click', function () { areas.forEach(function (el) { $(el).collapse('hide'); }); });
     }
   })();
 </script>
 
+<!-- 
 <script>
   (function () {
     var all = [].slice.call(document.querySelectorAll('#dk-lyric-1, [id^="dk-lyric-"]'));
@@ -2543,11 +3010,11 @@ Chorus: Fmin | Fmin | Db | E♭ | Fmin
       col.addEventListener('click', function () { all.forEach(function (el) { $(el).collapse('hide'); }); });
     }
   })();
-</script>
+</script> -->
 
 
   <!-- Optional: show exact local text prompts -->
-  <details class="mt-2">
+  <!-- <details class="mt-2">
     <summary class="small text-muted">Show exact local text prompts</summary>
     <pre class="pre-lines small mb-0">
 Text A: (paste local prompt A)
@@ -2555,11 +3022,11 @@ Text B: (paste local prompt B)
 Text C: (paste local prompt C)
     </pre>
   </details>
-</div>
+</div> -->
 
 
   <!-- Optional: show the exact text prompts -->
-  <details class="mt-2">
+  <!-- <details class="mt-2">
     <summary class="small text-muted">Show exact text prompts</summary>
     <pre class="pre-lines small mb-0">
 Text A: (paste your first text prompt here)
@@ -2567,7 +3034,7 @@ Text B: (paste your second text prompt here)
 Text C: (paste your third text prompt here)
     </pre>
   </details>
-</div>
+</div> -->
 
 <!-- === SCRIPTS (Bootstrap collapse needs these) === -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
