@@ -111,81 +111,6 @@ td, th { padding: 12px; }
         </tr>
       </thead>
       <tbody>
-
-        <!-- === ROW 1 === -->
-        <tr>
-          <td>1</td>
-          
-          <td class="prompt-col">
-            <div class="small text-muted">An emotional indie rock track with echoing guitars, steady drums. The mood is reflective and guiding, like the beacon of a lighthouse during a night voyage.</div>
-          </td>
-          <td class="p-0">
-            <div class="p-2 text-left">
-              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#lyric-1" aria-expanded="false" aria-controls="lyric-1">
-                <i class="bi bi-music-note-list"></i> Show lyrics
-              </button>
-            </div>
-            <div id="lyric-1" class="collapse">
-              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
-                [Verse]
-                黑夜裡只有浪潮低語
-                hēi yè lǐ zhǐ yǒu làng cháo dī yǔ
-                遠方微光閃爍在心底
-                yuǎn fāng wēi guāng shǎn shuò zài xīn dǐ
-                船身隨夢想搖晃前行
-                chuán shēn suí mèng xiǎng yáo huàng qián xíng
-                星辰引領未知的路徑
-                xīng chén yǐn lǐng wèi zhī de lù jìng
-                微光指引堅定的方向
-                wēi guāng zhǐ yǐn jiān dìng de fāng xiàng
-                心靈不再迷失無助
-                xīn líng bù zài mí shī wú zhù
-
-                [Chorus]
-                夜航燈塔照亮旅程
-                yè háng dēng tǎ zhào liàng lǚ chéng
-                黑暗中不再孤單
-                hēi àn zhōng bù zài gū dān
-                希望在波濤中閃耀
-                xī wàng zài bō tāo zhōng shǎn yào
-                勇氣陪我直到天明
-                yǒng qì péi wǒ zhí dào tiān míng
-
-                [Outro]
-                燈光依舊守護夜色
-                dēng guāng yī jiù shǒu hù yè sè
-                心靈找到歸屬的岸
-                xīn líng zhǎo dào guī shǔ de àn
-              </div>
-            </div>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="ComposerFlow_samples/mixed_25.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="acestep/25.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="diffrhythm/25_output.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="levo/25.wav" type="audio/wav">
-            </audio>
-          </td>
-          <td>
-            <audio controls preload="metadata" style="width:300px;">
-              <source src="suno/25.wav" type="audio/wav">
-            </audio>
-          </td>
-        </tr>
-
         <!-- === ROW 2 === -->
         <tr>
           <td>2</td>
@@ -1899,6 +1824,296 @@ td, th { padding: 12px; }
             </div>
           </div>
         </div>
+<!-- === NEW SECTION: Different singer and key === -->
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h4 class="m-0">Different Singer and Key</h4>
+    <div>
+      <button id="expandAllDK" class="btn btn-sm btn-outline-primary mr-2">
+        <i class="bi bi-arrows-expand"></i> Expand all lyrics
+      </button>
+      <button id="collapseAllDK" class="btn btn-sm btn-outline-secondary">
+        <i class="bi bi-arrows-collapse"></i> Collapse all lyrics
+      </button>
+    </div>
+  </div>
+
+  <div class="alert alert-light border small">
+    Same <em>lyrics</em> & same <em>local text prompt</em>; two versions with different singers and keys (thus different chords).
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-sm table-bordered align-middle">
+      <caption class="text-left">Male vs. Female vocalist in different keys, using the same lyrics and local text prompt.</caption>
+      <thead class="thead-light">
+        <tr>
+          <th class="sticky-col-1" style="min-width:60px;">#</th>
+          <th class="sticky-col-2 prompt-col">Global Style Prompt</th>
+          <th class="lyrics-col">Lyrics (shared)</th>
+          <th class="model-col">Male Vocal (Key: <span class="badge badge-dark">C Minor</span>)</th>
+          <th class="model-col">Female Vocal (Key: <span class="badge badge-info">E♭ Minor</span>)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- === DK ROW 1 === -->
+        <tr>
+          <td>1</td>
+          <td class="prompt-col">
+            <div class="small text-muted">
+              A moody trip-hop vibe with dark synths and hypnotic groove; intimate vocal, slow build, smoky atmosphere.
+            </div>
+            <div class="mt-1">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#dk-local-prompt-1" aria-expanded="false" aria-controls="dk-local-prompt-1">
+                <i class="bi bi-card-text"></i> Show local text prompt
+              </button>
+              <div id="dk-local-prompt-1" class="collapse">
+                <div class="p-2 small pre-lines border rounded bg-white">
+                  [intro] airy pad swell, filtered noise, sparse off-beat hats; slow LPF rise.<br>
+                  [verse] tight kick + sub drone + plucky synth ostinato; minimal.<br>
+                  [chorus] wider pads, open hats + clap, arpeggio lift; hypnotic, spacious.<br>
+                  [outro] drums thin out, pad tail + tape delay; soft fade.
+                </div>
+              </div>
+            </div>
+          </td>
+
+          <!-- Shared lyrics (collapsible) -->
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#dk-lyric-1" aria-expanded="false" aria-controls="dk-lyric-1">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="dk-lyric-1" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+              [Verse]
+              時間在掌心緩緩流動
+              沙粒劃過無聲的夢境
+              黑夜中隱藏不安心跳
+              記憶碎片如影追隨
+
+              [Chorus]
+              流沙時刻悄然滑落
+              夢境崩塌無法捕捉
+              心靈迷失在黑暗之中
+              時間無聲將我吞沒
+              </div>
+            </div>
+          </td>
+
+          <!-- Male version -->
+          <td class="align-top text-center">
+            <div class="mb-1">
+              <span class="badge badge-secondary">Male</span>
+              <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#dk-prog-male-1" aria-expanded="false" aria-controls="dk-prog-male-1">
+                <i class="bi bi-music-note-beamed"></i> Show progression (Key: Cmin)
+              </button>
+            </div>
+            <audio controls preload="metadata" style="width:300px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="dk/male_key_cmin_1.wav" type="audio/wav">
+            </audio>
+            <div id="dk-prog-male-1" class="collapse mt-2 text-left">
+              <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
+Cmin — Ab — Bb — Cmin / Cmin — Ab — Bb — Cmin<br>
+Verse: Cmin | Ab | Bb | Cmin<br>
+Chorus: Cmin | Cmin | Ab | Bb | Cmin
+              </div>
+            </div>
+          </td>
+
+          <!-- Female version -->
+          <td class="align-top text-center">
+            <div class="mb-1">
+              <span class="badge badge-info">Female</span>
+              <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#dk-prog-female-1" aria-expanded="false" aria-controls="dk-prog-female-1">
+                <i class="bi bi-music-note-beamed"></i> Show progression (Key: E♭min)
+              </button>
+            </div>
+            <audio controls preload="metadata" style="width:300px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="dk/female_key_ebmin_1.wav" type="audio/wav">
+            </audio>
+            <div id="dk-prog-female-1" class="collapse mt-2 text-left">
+              <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
+E♭min — B — C♯ — E♭min / E♭min — B — C♯ — E♭min<br>
+Verse: E♭min | B | C♯ | E♭min<br>
+Chorus: E♭min | E♭min | B | C♯ | E♭min
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- === NEW SECTION: Using melody of existing song === -->
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-2">
+    <h4 class="m-0">Using Melody of Existing Song</h4>
+    <div>
+      <button id="expandAllUM" class="btn btn-sm btn-outline-primary mr-2">
+        <i class="bi bi-arrows-expand"></i> Expand all lyrics
+      </button>
+      <button id="collapseAllUM" class="btn btn-sm btn-outline-secondary">
+        <i class="bi bi-arrows-collapse"></i> Collapse all lyrics
+      </button>
+    </div>
+  </div>
+
+  <div class="alert alert-light border small">
+    Shared <em>melody reference</em> & same <em>local text prompt</em>; two versions with different lyrics and keys (thus different chord progressions).
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-sm table-bordered align-middle">
+      <caption class="text-left">Two songs generated with the same melody reference but different lyrics and keys.</caption>
+      <thead class="thead-light">
+        <tr>
+          <th class="sticky-col-1" style="min-width:60px;">#</th>
+          <th class="sticky-col-2 prompt-col">Global Style Prompt</th>
+          <th style="min-width:220px;">Melody Reference</th>
+          <th class="lyrics-col">Lyrics A (Key: <span class="badge badge-primary">D Minor</span>)</th>
+          <th class="lyrics-col">Lyrics B (Key: <span class="badge badge-warning">F Minor</span>)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- === UM ROW 1 === -->
+        <tr>
+          <td>1</td>
+          <td class="prompt-col">
+            <div class="small text-muted">
+              A cinematic pop ballad; warm piano + strings, wide chorus, steady pulse; uplifting but reflective.
+            </div>
+            <div class="mt-1">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-local-prompt-1" aria-expanded="false" aria-controls="um-local-prompt-1">
+                <i class="bi bi-card-text"></i> Show local text prompt
+              </button>
+              <div id="um-local-prompt-1" class="collapse">
+                <div class="p-2 small pre-lines border rounded bg-white">
+                  [intro] piano arpeggio + soft strings swell;<br>
+                  [verse] intimate vocal + light piano; subtle percussion;<br>
+                  [chorus] full strings + drums open; wider pads; soaring hooks;<br>
+                  [outro] instruments peel back to piano; gentle tail.
+                </div>
+              </div>
+            </div>
+          </td>
+
+          <!-- Melody reference -->
+          <td class="align-top text-center">
+            <div class="mb-1"><span class="badge badge-dark">Melody Ref</span></div>
+            <audio controls preload="metadata" style="width:260px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="melody_ref/ballad_ref.wav" type="audio/wav">
+            </audio>
+          </td>
+
+          <!-- Lyrics A -->
+          <td class="p-0 align-top">
+            <div class="p-2 text-left d-flex justify-content-between align-items-center">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-lyric-a-1" aria-expanded="false" aria-controls="um-lyric-a-1">
+                <i class="bi bi-music-note-list"></i> Show lyrics A
+              </button>
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-prog-a-1" aria-expanded="false" aria-controls="um-prog-a-1">
+                <i class="bi bi-music-note-beamed"></i> Show progression (Dmin)
+              </button>
+            </div>
+            <div class="px-2 pb-2">
+              <audio controls preload="metadata" style="width:260px;">
+                <!-- TODO: replace with your actual file -->
+                <source src="um/a_key_dmin_1.wav" type="audio/wav">
+              </audio>
+            </div>
+            <div id="um-lyric-a-1" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+[Verse A]
+晨曦灑落喚醒的時光
+腳步輕快迎向未來
+心靈閃耀不滅的希望
+每一瞬間都充滿力量
+
+[Chorus A]
+我們向前 不再迷惘
+光芒引路 夢在遠方
+              </div>
+            </div>
+            <div id="um-prog-a-1" class="collapse">
+              <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
+Dmin — Bb — F — C (x2)<br>
+Verse: Dmin | Bb | F | C<br>
+Chorus: Dmin | Dmin | Bb | C | Dmin
+              </div>
+            </div>
+          </td>
+
+          <!-- Lyrics B -->
+          <td class="p-0 align-top">
+            <div class="p-2 text-left d-flex justify-content-between align-items-center">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-lyric-b-1" aria-expanded="false" aria-controls="um-lyric-b-1">
+                <i class="bi bi-music-note-list"></i> Show lyrics B
+              </button>
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#um-prog-b-1" aria-expanded="false" aria-controls="um-prog-b-1">
+                <i class="bi bi-music-note-beamed"></i> Show progression (Fmin)
+              </button>
+            </div>
+            <div class="px-2 pb-2">
+              <audio controls preload="metadata" style="width:260px;">
+                <!-- TODO: replace with your actual file -->
+                <source src="um/b_key_fmin_1.wav" type="audio/wav">
+              </audio>
+            </div>
+            <div id="um-lyric-b-1" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+[Verse B]
+夜色映照無盡的街
+霓虹閃爍掩蓋心事
+腳步迷失在夢的邊界
+風聲低語引領前行
+
+[Chorus B]
+別怕黑夜 會有晨光
+在你心上 點亮希望
+              </div>
+            </div>
+            <div id="um-prog-b-1" class="collapse">
+              <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
+Fmin — Db — Ab — E♭ (x2)<br>
+Verse: Fmin | Db | Ab | E♭<br>
+Chorus: Fmin | Fmin | Db | E♭ | Fmin
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</div>
+<script>
+  (function () {
+    var scopes = [].slice.call(document.querySelectorAll('#um-lyric-a-1, #um-lyric-b-1, [id^="um-lyric-a-"], [id^="um-lyric-b-"]'));
+    var exp = document.getElementById('expandAllUM');
+    var col = document.getElementById('collapseAllUM');
+    if (exp && col) {
+      exp.addEventListener('click', function () { scopes.forEach(function (el) { $(el).collapse('show'); }); });
+      col.addEventListener('click', function () { scopes.forEach(function (el) { $(el).collapse('hide'); }); });
+    }
+  })();
+</script>
+
+<script>
+  (function () {
+    var all = [].slice.call(document.querySelectorAll('#dk-lyric-1, [id^="dk-lyric-"]'));
+    var exp = document.getElementById('expandAllDK');
+    var col = document.getElementById('collapseAllDK');
+    if (exp && col) {
+      exp.addEventListener('click', function () { all.forEach(function (el) { $(el).collapse('show'); }); });
+      col.addEventListener('click', function () { all.forEach(function (el) { $(el).collapse('hide'); }); });
+    }
+  })();
+</script>
 
 
   <!-- Optional: show exact local text prompts -->
