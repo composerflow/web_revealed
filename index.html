@@ -2375,7 +2375,445 @@ td, th { padding: 12px; }
     </table>
   </div>
 </div>
+<div class="alert alert-light border small">
+    Same <em>lyrics</em> and text prompt</em>; two versions with different lyrics2melody model.
+  </div>
+  <div class="table-responsive">
+    <table class="table table-sm table-bordered align-middle">
+      <!-- <caption class="text-left">Male vs. Female vocalist in different keys, using the same lyrics and local text prompt.</caption> -->
+      <thead class="thead-light">
+        <tr>
+          <th class="sticky-col-1" style="min-width:60px;">#</th>
+          <th class="sticky-col-2 prompt-col"> Local Text Prompt</th>
+          <th class="lyrics-col">Lyrics (shared)</th>
+          <th class="model-col">SongComposer</th>
+          <th class="model-col">CSL-L2M</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- === DK ROW 1 === -->
+        <tr>
+          <td>1</td>
+          <td class="prompt-col">
+  
+            <div class="mt-1">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#dk-local-prompt-1" aria-expanded="false" aria-controls="dk-local-prompt-1">
+                <i class="bi bi-card-text"></i> Show local text prompt
+              </button>
+              <div id="dk-local-prompt-1" class="collapse">
+                <div class="p-2 small pre-lines border rounded bg-white">
+                  [intro] Rhodes + brushed kit; vocal pickup.<br>
+                  [verse] Pocket groove; bass slides into 5ths bar 8. Guitar licks.<br>
+                  [chorus] Full kit with ghost-notes; rhodes extensions.<br>
+                  [outro] Solo space; gradual strip to rhodes + kick.
+                </div>
+              </div>
+            </div>
+          </td>
 
+          <!-- Shared lyrics (collapsible) -->
+          <td class="p-0">
+            <div class="p-2 text-left">
+              <button class="btn btn-link btn-sm p-0" data-toggle="collapse" data-target="#dk-lyric-1" aria-expanded="false" aria-controls="dk-lyric-1">
+                <i class="bi bi-music-note-list"></i> Show lyrics
+              </button>
+            </div>
+            <div id="dk-lyric-1" class="collapse">
+              <div class="p-2 small pre-lines" style="max-height:200px; overflow-y:auto;">
+              [Chorus]
+              本來應該匆匆容容遊刃有餘
+              běn lái yīng gāi cōng cōng róng róng yóu rèn yǒu yú
+              現在是匆匆忙忙連滾帶爬 
+              xiàn zài shì cōng cōng máng máng lián gǔn dài pá
+              睜眼說瞎話 
+              zhēng yǎn shuō xiā huà
+              你在哽咽什麼啦
+              nǐ zài gěng yè shén me la
+              你在哭什麼哭 
+              nǐ zài kū shén me kū
+              沒出息
+              méi chū xi
+              [Verse]
+              沒較飾 
+              méi jiào shì
+              沒塗抹 
+              méi tú mǒ
+              沒做作
+              méi zuò zuo
+              生旦淨末醜 
+              shēng dàn jìng mò chǒu
+              我們不苟活
+              wǒ men bù gǒu huó
+              懂你就是不做
+              dǒng nǐ jiù shì bù zuò
+              沒有最扯只有更扯
+              méi yǒu zuì chě zhǐ yǒu gèng chě
+              算什麼
+              suàn shén me
+              二十年
+              èr shí nián
+              過去了
+              guò qù le
+              [Chorus]
+              本來應該匆匆容容遊刃有餘
+              běn lái yīng gāi cōng cōng róng róng yóu rèn yǒu yú
+              現在是匆匆忙忙連滾帶爬 
+              xiàn zài shì cōng cōng máng máng lián gǔn dài pá
+              睜眼說瞎話 
+              zhēng yǎn shuō xiā huà
+              你在哽咽什麼啦
+              nǐ zài gěng yè shén me la
+              你在哭什麼哭 
+              nǐ zài kū shén me kū
+              沒出息
+              méi chū xi
+              </div>
+            </div>
+          </td>
+
+          <!-- Male version -->
+          <td class="align-top text-center">
+            <div class="mb-1">
+              <span class="badge badge-secondary">Male</span>
+              <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#dk-prog-male-1" aria-expanded="false" aria-controls="dk-prog-male-1">
+                <i class="bi bi-music-note-beamed"></i> Show progression
+              </button>
+            </div>
+            <audio controls preload="metadata" style="width:300px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="songcomposer_example/mixed_0.wav" type="audio/wav">
+            </audio>
+            <div id="dk-prog-male-1" class="collapse mt-2 text-left">
+              <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
+              0.000 0.458 G
+              0.458 0.916 G
+              0.916 1.374 G:7
+              1.374 1.832 G:7
+              1.832 2.290 G:min7
+              2.290 2.748 G:min7
+              2.748 3.206 G:min7
+              3.206 3.664 G:min7
+              3.664 4.122 A:min7
+              4.122 4.580 A:min7
+              4.580 5.038 A:min
+              5.038 5.496 A:min
+              5.496 5.954 F:min7
+              5.954 6.412 F:min7
+              6.412 6.870 F
+              6.870 7.328 F
+              7.328 7.786 C:min7
+              7.786 8.244 C:min7
+              8.244 8.702 C
+              8.702 9.160 C
+              9.160 9.618 C:min
+              9.618 10.076 C:min
+              10.076 10.534 N
+              10.534 10.992 N
+              10.992 11.450 C:min7
+              11.450 11.908 C:min7
+              11.908 12.366 D:min7
+              12.366 12.824 D:min7
+              12.824 13.282 N
+              13.282 13.740 N
+              13.740 14.198 N
+              14.198 14.656 N
+              14.656 15.114 N
+              15.114 15.573 N
+              15.573 16.031 N
+              16.031 16.489 N
+              16.489 16.947 D:min7
+              16.947 17.405 D:min7
+              17.405 17.863 D:min
+              17.863 18.321 D:min
+              18.321 18.779 F:min7
+              18.779 19.237 F:min7
+              19.237 19.695 F:min7
+              19.695 20.153 F:min7
+              20.153 20.611 C
+              20.611 21.069 C
+              21.069 21.527 C:min7
+              21.527 21.985 C:min7
+              21.985 22.443 G
+              22.443 22.901 G
+              22.901 23.359 G
+              23.359 23.817 G
+              23.817 24.275 D:min
+              24.275 24.733 D:min
+              24.733 25.191 D:min7
+              25.191 25.649 D:min7
+              25.649 26.107 F
+              26.107 26.565 F
+              26.565 27.023 F
+              27.023 27.481 F
+              27.481 27.939 C
+              27.939 28.397 C
+              28.397 28.855 C
+              28.855 29.313 C
+              29.313 29.771 G
+              29.771 30.229 G
+              30.229 30.687 G
+              30.687 31.145 G
+              31.145 31.603 A:min7
+              31.603 32.061 A:min7
+              32.061 32.519 A:min7
+              32.519 32.977 A:min7
+              32.977 33.435 C
+              33.435 33.893 C
+              33.893 34.351 C
+              34.351 34.809 C
+              34.809 35.267 F
+              35.267 35.725 F
+              35.725 36.183 F:min7
+              36.183 36.641 F:min7
+              36.641 37.099 G
+              37.099 37.557 G
+              37.557 38.015 G
+              38.015 38.473 G
+              38.473 38.931 D:min
+              38.931 39.389 D:min
+              39.389 39.847 D:min
+              39.847 40.305 D:min
+              40.305 40.763 E:min7
+              40.763 41.221 E:min7
+              41.221 41.679 E:min
+              41.679 42.137 E:min
+              42.137 42.595 F
+              42.595 43.053 F
+              43.053 43.511 F
+              43.511 43.969 F
+              43.969 44.427 G:min7
+              44.427 44.885 G:min7
+              44.885 45.343 G
+              45.343 45.801 G
+              45.801 46.260 N
+
+              </div>
+            </div>
+          </td>
+
+          <!-- Female version -->
+          <td class="align-top text-center">
+            <div class="mb-1">
+              <span class="badge badge-info">Female</span>
+              <button class="btn btn-link btn-sm p-0 ml-2" data-toggle="collapse" data-target="#dk-prog-female-1" aria-expanded="false" aria-controls="dk-prog-female-1">
+                <i class="bi bi-music-note-beamed"></i> Show progression (Key: F# major)
+              </button>
+            </div>
+            <audio controls preload="metadata" style="width:300px;">
+              <!-- TODO: replace with your actual file -->
+              <source src="demo_website_different_key/female_wang_new_texttext_7.0_con_1.5_rhythm_key_structure_chord_audio_melody_0.3_500/mixed_0.wav" type="audio/wav">
+            </audio>
+            <div id="dk-prog-female-1" class="collapse mt-2 text-left">
+              <div class="p-2 small pre-lines border rounded" style="max-height:200px; overflow-y:auto;">
+                0.000 0.448 C
+                0.448 0.896 C
+                0.896 1.343 C
+                1.343 1.791 C
+                1.791 2.239 F
+                2.239 2.687 F
+                2.687 3.134 F
+                3.134 3.582 F
+                3.582 4.030 G
+                4.030 4.478 G
+                4.478 4.925 G
+                4.925 5.373 G
+                5.373 5.821 C
+                5.821 6.269 C
+                6.269 6.716 C
+                6.716 7.164 C
+                7.164 7.612 C
+                7.612 8.060 C
+                8.060 8.507 C
+                8.507 8.955 C
+                8.955 9.403 C
+                9.403 9.851 C
+                9.851 10.299 C
+                10.299 10.746 C
+                10.746 11.194 F
+                11.194 11.642 F
+                11.642 12.090 F
+                12.090 12.537 F
+                12.537 12.985 G
+                12.985 13.433 G
+                13.433 13.881 G
+                13.881 14.328 G
+                14.328 14.776 C
+                14.776 15.224 C
+                15.224 15.672 C:min7
+                15.672 16.119 C:min7
+                16.119 16.567 C
+                16.567 17.015 C
+                17.015 17.463 C:min7
+                17.463 17.910 C:min7
+                17.910 18.358 F
+                18.358 18.806 F
+                18.806 19.254 F:min7
+                19.254 19.701 F:min7
+                19.701 20.149 G
+                20.149 20.597 G
+                20.597 21.045 G
+                21.045 21.493 G
+                21.493 21.940 C
+                21.940 22.388 C
+                22.388 22.836 C
+                22.836 23.284 C
+                23.284 23.731 D:min
+                23.731 24.179 D:min
+                24.179 24.627 D:min
+                24.627 25.075 D:min
+                25.075 25.522 C:min
+                25.522 25.970 C:min
+                25.970 26.418 C:min
+                26.418 26.866 C:min
+                26.866 27.313 G:min
+                27.313 27.761 G:min
+                27.761 28.209 G:min
+                28.209 28.657 G:min
+                28.657 29.104 C
+                29.104 29.552 C
+                29.552 30.000 C
+                30.000 30.448 C
+                30.448 30.896 G:min
+                30.896 31.343 G:min
+                31.343 31.791 G:min
+                31.791 32.239 G:min
+                32.239 32.687 A:min7
+                32.687 33.134 A:min7
+                33.134 33.582 A:min7
+                33.582 34.030 A:min7
+                34.030 34.478 F:min7
+                34.478 34.925 F:min7
+                34.925 35.373 F
+                35.373 35.821 F
+                35.821 36.269 C:min
+                36.269 36.716 C:min
+                36.716 37.164 C
+                37.164 37.612 C
+                37.612 38.060 A:min
+                38.060 38.507 A:min
+                38.507 38.955 A:min
+                38.955 39.403 A:min
+                39.403 39.851 E:min
+                39.851 40.298 E:min
+                40.298 40.746 E:min7
+                40.746 41.194 E:min7
+                41.194 41.642 F
+                41.642 42.090 F
+                42.090 42.537 F
+                42.537 42.985 F
+                42.985 43.433 C
+                43.433 43.881 C
+                43.881 44.328 C
+                44.328 44.776 C
+                44.776 45.224 A:min
+                45.224 45.672 A:min
+                45.672 46.119 A:min
+                46.119 46.567 A:min
+                46.567 47.015 E:min
+                47.015 47.463 E:min
+                47.463 47.910 E:min7
+                47.910 48.358 E:min7
+                48.358 48.806 F:min7
+                48.806 49.254 F:min7
+                49.254 49.701 F:min7
+                49.701 50.149 F:min7
+                50.149 50.597 C
+                50.597 51.045 C
+                51.045 51.493 C:min7
+                51.493 51.940 C:min7
+                51.940 52.388 D:min7
+                52.388 52.836 D:min7
+                52.836 53.284 D:min7
+                53.284 53.731 D:min7
+                53.731 54.179 C:min
+                54.179 54.627 C
+                54.627 55.075 A:min7
+                55.075 55.522 A:min7
+                55.522 55.970 G:min
+                55.970 56.418 G:min
+                56.418 56.866 G
+                56.866 57.313 G
+                57.313 57.761 C
+                57.761 58.209 C
+                58.209 58.657 C:min7
+                58.657 59.104 C:min7
+                59.104 59.552 G:min
+                59.552 60.000 G:min
+                60.000 60.448 G:min
+                60.448 60.895 G:min
+                60.895 61.343 A:min7
+                61.343 61.791 A:min7
+                61.791 62.239 A:min7
+                62.239 62.687 A:min7
+                62.687 63.134 F
+                63.134 63.582 F
+                63.582 64.030 F
+                64.030 64.478 F
+                64.478 64.925 C:min7
+                64.925 65.373 C:min7
+                65.373 65.821 C:min
+                65.821 66.269 C:min
+                66.269 66.716 A:min
+                66.716 67.164 A:min
+                67.164 67.612 A:min7
+                67.612 68.060 A:min7
+                68.060 68.507 E:min
+                68.507 68.955 E:min
+                68.955 69.403 E:min
+                69.403 69.851 E:min
+                69.851 70.298 F
+                70.298 70.746 F
+                70.746 71.194 F
+                71.194 71.642 F
+                71.642 72.090 C:min7
+                72.090 72.537 C:min7
+                72.537 72.985 C
+                72.985 73.433 C
+                73.433 73.881 A:min
+                73.881 74.328 A:min
+                74.328 74.776 A:min
+                74.776 75.224 A:min
+                75.224 75.672 E:min
+                75.672 76.119 E:min
+                76.119 76.567 E:min
+                76.567 77.015 E:min
+                77.015 77.463 F
+                77.463 77.910 F
+                77.910 78.358 F
+                78.358 78.806 F
+                78.806 79.254 C
+                79.254 79.701 C
+                79.701 80.149 C:min7
+                80.149 80.597 C:min7
+                80.597 81.045 E:min
+                81.045 81.493 E:min
+                81.493 81.940 E:min7
+                81.940 82.388 E:min7
+                82.388 82.836 F
+                82.836 83.284 F
+                83.284 83.731 F
+                83.731 84.179 F
+                84.179 84.627 C:min7
+                84.627 85.075 C:min7
+                85.075 85.522 C:min7
+                85.522 85.970 C:min7
+                85.970 86.418 D:min7
+                86.418 86.866 D:min7
+                86.866 87.313 D:min7
+                87.313 87.761 D:min7
+                87.761 88.209 D
+                88.209 88.657 D
+                88.657 89.104 N
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <!-- Add more rows as needed -->
+      </tbody>
+    </table>
+  </div>
+</div>
 <!-- === NEW SECTION: Melody from Existing Songs vs Auto-generated Melody (2 Variants) === -->
 <div class="container my-5" id="um2cmp">
   <div class="d-flex justify-content-between align-items-center mb-2">
