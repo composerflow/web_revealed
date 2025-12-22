@@ -1,4 +1,23 @@
 <html>
+<head>
+  <meta charset="utf-8">
+  <title>ComposerFlow: MIDI-Informed Singing Accompaniment Generation in a
+Compositional Song Pipeline</title>
+
+  <!-- Google Scholar metadata -->
+  <meta name="citation_title"
+        content="ComposerFlow: MIDI-Informed Singing Accompaniment Generation in a
+Compositional Song Pipeline">
+  <meta name="citation_author" content="Fang-Duo Tsai">
+  <meta name="citation_author" content="Yi-An Lai">
+  <meta name="citation_author" content="Fei-Yueh Chen">
+  <meta name="citation_author" content="Li Chai">
+  <meta name="citation_author" content="Hao-Chung Cheng">
+  <meta name="citation_author" content="Yi-Hsuan Yang">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_pdf_url"
+        content="https://composerflow.github.io/web/paper.pdf">
+</head>
 
 <head>
 	<title>ComposerFlow</title>
@@ -73,10 +92,16 @@ td, th { padding: 12px; }
 <div class="container py-4">
   <h1 class="display-4 mb-3">ComposerFlow: MIDI-informed singing accompaniment generation in a compositional song pipeline</h1>
   <section aria-label="Paper abstract" class="mb-4">
+    <p>
+      Fang-Duo Tsai, Yi-An Lai, Fei-Yueh Chen, Li Chai, Hao-Chung Cheng, Yi-Hsuan Yang 
+    </p>
+    <p><em>Preprint. Under review.</em></p>
     <h2 class="h5 mb-2">Abstract</h2>
     <p class="lead mb-0">Open-source end-to-end song generators have emerged in the wake of commercial systems like Suno, offering one-shot music with lyrics but at the cost of large datasets and substantial compute. We propose ComposerFlow, a hierarchical pipeline that composes songs by chaining four specialized components—lyrics-to-melody, melody harmonization, singing-voice synthesis (SVS), and vocal-to-backing generation. This modular design is resource-efficient (single RTX 3090; ~6k hours of data) and editable: users can revise intermediate results (e.g., melody, chords, vocal) and deterministically regenerate all downstream audio. Leveraging SVS further mitigates common end-to-end issues such as unstable vocal timbre and phoneme errors. We evaluate our pipeline against representative end-to-end baselines and find comparable perceptual quality despite significantly lower training demands. We release audio demos at https://composerflow.github.io/web/. Our results suggest that modular, controllable pipelines are a practical alternative to monolithic song models, enabling rapid iteration and reliable production on accessible hardware.</p>
   </section>
 </div>
+
+<a href="paper.pdf">Download PDF</a>
 <div style="text-align:center;">
   <img src="composerflow.png" alt="Album cover" style="max-width:75%; height:auto;">
 </div>
