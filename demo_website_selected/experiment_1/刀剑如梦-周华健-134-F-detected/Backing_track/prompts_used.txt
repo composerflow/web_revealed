@@ -1,0 +1,4 @@
+inference_script=MuseControlLite/MuseControlLite_inference_47s_scale_up.py
+
+[text_prompts]
+1	reflective instrumental pop with piano, synth pad, bass, and steady drums

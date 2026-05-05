@@ -1,0 +1,8 @@
+inference_script=MuseControlLite/MuseControlLite_inference_47s_scale_up.py
+fallback_text_prompt=acoustic guitar, country music
+
+[text_prompts]
+1	energetic rock backing with drums, electric guitar, bass guitar, driving rhythm, and uplifting mood
+2	romantic jazz backing with piano, bass, soft drums, cool harmony, and reflective atmosphere
+3	calming country backing with acoustic guitar, happy uplifting vibe
+4	melancholic electronic backing with piano, bass, reflective synth textures, and instrumental pop style

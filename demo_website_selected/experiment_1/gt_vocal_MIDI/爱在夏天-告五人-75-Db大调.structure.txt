@@ -1,0 +1,2 @@
+STRUCTURE_STARTS=( 0.00  22.40  70.80  99.60  147.60  176.40  206.00 )
+STRUCTURE_TAGS=(   intro   verse   chorus   verse   chorus   bridge   chorus )

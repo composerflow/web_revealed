@@ -1,0 +1,12 @@
+inference_script=MuseControlLite/MuseControlLite_inference_continuation.py
+fallback_text_prompt=
+
+[structure_segments]
+1	0.00	intro	acoustic guitar, relaxed country style
+2	22.40	verse	acoustic guitar, relaxed country style with steady drum
+3	46	verse	Electric piano joins the acoustic guitar and bass, slightly more emotional and poignant, reflective and sentimental, energy slowly building
+4	70.80	chorus	Full band explodes — driving drums, electric guitar riffs, bass guitar locked in, energetic and uplifting, powerful and motivational
+5	99.60	chorus	Chorus repeats with more intensity, electric guitar leads over driving drums, confident and powerful, emotionally uplifting and inspiring
+6	125	verse	Band pulls back — acoustic guitar and bass remain, drums drop out, reflective and melancholic, sentimental and gentle, breathing room before the finale
+7	147.60	chorus	Full band returns, driving drums and electric guitar riffs, energetic and uplifting, more powerful than before with an emotional, motivational surge
+8	176.40	bridge	driving drums and electric guitar riffs, energetic and uplifting, more powerful than before with an emotional, motivational surge

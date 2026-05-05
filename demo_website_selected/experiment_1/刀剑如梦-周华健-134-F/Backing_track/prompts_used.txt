@@ -1,0 +1,7 @@
+inference_script=MuseControlLite/MuseControlLite_inference_continuation.py
+fallback_text_prompt=
+
+[structure_segments]
+1	0.00	intro	A slow, gentle fingerpicked acoustic guitar melody, soft and reflective, building quietly with a hint of melancholy
+2	30.45	verse	Melancholic yet hopeful acoustic folk feel with fingerpicked acoustic guitar, electric piano
+3	59.10	chorus	Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, motivational, emotional release.

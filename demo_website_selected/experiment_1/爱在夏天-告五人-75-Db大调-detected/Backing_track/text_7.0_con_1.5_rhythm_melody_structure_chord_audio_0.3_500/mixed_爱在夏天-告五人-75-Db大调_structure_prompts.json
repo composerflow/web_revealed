@@ -1,0 +1,63 @@
+{
+  "song_id": "爱在夏天-告五人-75-Db大调",
+  "vocal_audio_file": "/data/home/fundwotsai/MIDI-SAG/demo_website/experiment_1/gt_vocal_MIDI/爱在夏天-告五人-75-Db大调.wav",
+  "mixed_audio_file": "/data/home/fundwotsai/MIDI-SAG/demo_website/experiment_1/爱在夏天-告五人-75-Db大调-detected/Backing_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/mixed_爱在夏天-告五人-75-Db大调_full.wav",
+  "segments": [
+    {
+      "index": 0,
+      "start_s": 0.0,
+      "end_s": 22.4,
+      "tag": "intro",
+      "prompt": "acoustic guitar, relaxed country style"
+    },
+    {
+      "index": 1,
+      "start_s": 22.4,
+      "end_s": 46.0,
+      "tag": "verse",
+      "prompt": "acoustic guitar, relaxed country style with steady drum"
+    },
+    {
+      "index": 2,
+      "start_s": 46.0,
+      "end_s": 70.8,
+      "tag": "verse",
+      "prompt": "Electric piano joins the acoustic guitar and bass, slightly more emotional and poignant, reflective and sentimental, energy slowly building"
+    },
+    {
+      "index": 3,
+      "start_s": 70.8,
+      "end_s": 99.6,
+      "tag": "chorus",
+      "prompt": "Full band explodes — driving drums, electric guitar riffs, bass guitar locked in, energetic and uplifting, powerful and motivational"
+    },
+    {
+      "index": 4,
+      "start_s": 99.6,
+      "end_s": 123.0,
+      "tag": "chorus",
+      "prompt": "Chorus repeats with more intensity, electric guitar leads over driving drums, confident and powerful, emotionally uplifting and inspiring"
+    },
+    {
+      "index": 5,
+      "start_s": 123.0,
+      "end_s": 147.6,
+      "tag": "verse",
+      "prompt": "Band pulls back — acoustic guitar and bass remain, drums drop out, reflective and melancholic, sentimental and gentle, breathing room before the finale"
+    },
+    {
+      "index": 6,
+      "start_s": 147.6,
+      "end_s": 176.4,
+      "tag": "chorus",
+      "prompt": "Full band returns, driving drums and electric guitar riffs, energetic and uplifting, more powerful than before with an emotional, motivational surge"
+    },
+    {
+      "index": 7,
+      "start_s": 176.4,
+      "end_s": 212.2,
+      "tag": "bridge",
+      "prompt": "driving drums and electric guitar riffs, energetic and uplifting, more powerful than before with an emotional, motivational surge"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "song_id": "刀剑如梦-周华健-134-F",
+  "vocal_audio_file": "/data/home/fundwotsai/MIDI-SAG/demo_website/experiment_1/gt_vocal_MIDI/刀剑如梦-周华健-134-F.wav",
+  "mixed_audio_file": "/data/home/fundwotsai/MIDI-SAG/demo_website/experiment_1/刀剑如梦-周华健-134-F/Backing_track/text_7.0_con_1.5_rhythm_melody_structure_chord_audio_0.3_500/mixed_刀剑如梦-周华健-134-F_full.wav",
+  "segments": [
+    {
+      "index": 0,
+      "start_s": 0.0,
+      "end_s": 30.45,
+      "tag": "intro",
+      "prompt": "A slow, gentle fingerpicked acoustic guitar melody, soft and reflective, building quietly with a hint of melancholy"
+    },
+    {
+      "index": 1,
+      "start_s": 30.45,
+      "end_s": 59.1,
+      "tag": "verse",
+      "prompt": "Melancholic yet hopeful acoustic folk feel with fingerpicked acoustic guitar, electric piano"
+    },
+    {
+      "index": 2,
+      "start_s": 59.1,
+      "end_s": 90.44024943310657,
+      "tag": "chorus",
+      "prompt": "Energetic rock with driving drums, electric guitar riffs, bass guitar, and an uplifting, motivational, emotional release."
+    }
+  ]
+}
